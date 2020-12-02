@@ -1,12 +1,14 @@
 import React from 'react';
 import { Navbar, Dropdown, Row, Col, Container } from "react-bootstrap";
 import classes from './css-modules/First-screen.module.css';
-import golden_finger from './../pictures/cup.png'
+import golden_finger from './../pictures/cup.png';
+import Nav from './Navpc.jsx';
 
 const First_screen = () => {
   return (
     <Container fluid className={classes.main_screen}>
       <Container className={classes.first_screen_wrapper}>
+      <Nav />
       {/*First screen*/}
       <Row>
         {/*Тайтл и описание на главной*/}
