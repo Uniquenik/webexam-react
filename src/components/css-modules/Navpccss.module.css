@@ -84,3 +84,16 @@
     display: block;
   }
 }
+.menu li{
+  display: inline-block;
+}
+.menu a{
+  display: block; /* Блочная ссылка */
+  white-space: nowrap;
+}
+ul{
+  padding-inline-start:0px;
+}
+.toggle:hover .toggle {
+  display: block !important; 
+ } 
