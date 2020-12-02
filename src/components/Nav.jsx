@@ -1,7 +1,7 @@
 import React from 'react';
 import { Navbar, Dropdown, Row, Col, Container } from "react-bootstrap";
 import classes from './Navcss.module.css';
-import logopc from './drupal-coder.svg'
+import logopc from '../pictures/drupal-coder.svg'
 
 const Nav = () => {
     return (
