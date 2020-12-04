@@ -1,0 +1,85 @@
+.second_screen {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    background-color: white;
+    padding-top: 100px;
+    position: relative;
+}
+
+.second_screen_wrapper {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.title {
+  color: #050c33;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.description {
+  color: #4f5a73;
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 100px;
+}
+
+.icon_description{
+  color: #4f5a73;
+  font-weight: 500;
+  font-size: 16px;
+  padding-top: 30px;
+}
+
+.icons_wrapper {
+  padding-bottom: 50px;
+  padding-right: 60px;
+}
+
+.icon_wrapper {
+  text-align: left;
+}
+
+.back_icon {
+  position: absolute;
+  margin-left: -75px;
+  width: 150px;
+  height: 120px;
+  opacity: 0.08;
+}
+
+.front_icon {
+  position: relative;
+}
+
+@media screen and (max-device-width: 767px) {
+
+  .title {
+    font-size: 23px;
+  }
+  .description {
+    font-size: 14px;
+    margin-bottom: 60px;
+  }
+  .icon_description{
+    font-size: 14px;
+    padding-top: 15px;
+  }
+  .icons_wrapper {
+    padding-bottom: 30px;
+  }
+  .icon_wrapper {
+    text-align: center;
+  }
+}
+@media screen and (max-device-width: 1080px){
+  .icon_wrapper {
+    text-align: center;
+  }
+  .icon_description{
+    line-height: 1.3;
+  }
+  .icons_wrapper {
+    padding-right: 20px;
+  }
+}

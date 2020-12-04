@@ -1,0 +1,118 @@
+.main_screen {
+  font-family: 'Montserrat', sans-serif !important;
+  font-family: Montserrat;
+  font-style: normal;
+  background-color: black;
+  padding-left: 130px;
+  padding-right: 130px;
+  padding-bottom: 100px;
+  padding-top: 20px
+}
+
+.icon {
+    width:175px;
+    height:25px;
+}
+
+.navbar{ 
+    margin-top: 9px;
+    font-weight: 500;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-style: normal;
+  }
+.dropdown_menu
+{
+    color: #f14d34;
+    background-color: #f14d34;
+    
+    border-bottom: 0px;
+    /*border-color: #fff;*/
+}
+.dropdown_menu1
+{
+    color: #f14d34;
+    background-color: #f14d34;
+    border-bottom: 0px;
+    /*border-color: #fff;*/
+}
+
+.navbarpc {
+    display:none;
+    color: rgb(255, 255, 255) !important;
+}
+.navbar a{
+  height: 22px;
+  transition: all 400ms;
+}
+.navbar a:hover {
+    color: white;
+    text-decoration: none;
+    /*border-bottom:3px solid #f14d34;*/
+  }
+.navbar a:visited{
+    color: white;
+    text-decoration: none;
+  }
+.navbar a:link{
+    color: white;
+    text-decoration: none;
+  }
+.dropdown_menu .dropdown_item
+{   
+  width: 219px !important; 
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f14d34;
+  background-color: #f14d34;
+  padding: 3px 20px;
+  transition: all 400ms;
+  height: auto;
+  width: auto;
+}
+
+.dropdown_menu1 .dropdown_item1
+{   
+  width: 160px !important; 
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  color: #f14d34;
+  background-color: #f14d34;
+  padding: 3px 20px;
+  transition: all 400ms;
+  height: auto;
+  width: auto;
+}
+.downchoice a:hover{
+    border-bottom:3px solid #f14d34;
+}
+.downchoice a{
+  margin-right: 25px;
+}
+.dropchoice :hover {
+  background-color: #d13018;
+}
+.dropchoice a{
+  width: 179px !important;
+}
+
+@media (min-width: 768px) {
+  .navbarpc{
+    display: block;
+  }
+}
+.menu li{
+  display: inline-block;
+}
+.menu a{
+  display: block; /* Блочная ссылка */
+  white-space: nowrap;
+}
+ul{
+  padding-inline-start:0px;
+}
+.toggle:hover .toggle {
+  display: block !important; 
+ } 
