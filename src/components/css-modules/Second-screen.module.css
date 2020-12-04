@@ -1,9 +1,7 @@
-
 .second_screen {
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     background-color: white;
-    padding-bottom: 100px;
     padding-top: 100px;
 }
 
@@ -24,10 +22,6 @@
   font-size: 16px;
   margin-bottom: 100px;
 }
-.icon {
-  width: 100%;
-  height: 100%;
-}
 
 .icon_description{
   color: #4f5a73;
@@ -43,6 +37,18 @@
 
 .icon_wrapper {
   text-align: left;
+}
+
+.back_icon {
+  position: absolute;
+  margin-left: -75px;
+  width: 150px;
+  height: 120px;
+  opacity: 0.08;
+}
+
+.front_icon {
+  position: relative;
 }
 
 @media screen and (max-device-width: 767px) {

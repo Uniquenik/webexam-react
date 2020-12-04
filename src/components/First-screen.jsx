@@ -6,7 +6,7 @@ import Nav from './Navpc.jsx';
 
 const First_screen = () => {
   return (
-    <Container fluid className={classes.main_screen}>
+    <Container fluid="true" className={classes.main_screen}>
       <Container className={classes.first_screen_wrapper}>
       <Nav />
       {/*First screen*/}

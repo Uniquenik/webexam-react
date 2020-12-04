@@ -4,7 +4,7 @@ import classes from './css-modules/Navmobile.module.css';
 
 const Navmobile = () => {
     return (
-        <Navbar inverse fluid fixed="bottom" bg="light" expand="lg" className={classes.navbarmobile}>
+        <Navbar fluid="true" fixed="bottom" bg="light" expand="lg" className={classes.navbarmobile}>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
@@ -19,7 +19,7 @@ const Navmobile = () => {
                 </Nav>
             </Navbar.Collapse>
             <Navbar.Brand href="#home">Re</Navbar.Brand>
-            <Navbar.Toggle inverse aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Navbar>
 
 
