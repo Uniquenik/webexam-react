@@ -118,35 +118,28 @@
   }
 }
 
-.Container {
+/*.Container {
   width: 100%;
-  height: 100%;
   position: relative;
   overflow: hidden;
 }
 
 video {
   position: absolute;
-  left: 50%;
-  top: 50%;
-  min-height: 200%;
-  width: auto;
-  height: auto;
-  -webkit-transform: translate(-50%,-50%);
-  -moz-transform: translate(-50%,-50%);
-  -ms-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+
   z-index: 0;
-  object-fit: inherit;
 }
 
 .background{
   position: absolute;
   left: 50%;
   top: 50%;
-  /* The following will size the video to fit the full container. Not necessary, just nice.*/
-  min-width: 100%;
-  min-height: 200%;
+  height: 100%;
+  width: 100%;
   -webkit-transform: translate(-50%,-50%);
   -moz-transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
@@ -156,6 +149,50 @@ video {
 }
 
 .fixwidth{
-  width: 100%;
+  width: auto;
 
+}*/
+.fixwidth {
+  position: absolute;
+  background-color: black;
+  height: 200%;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+  z-index: 0;
 }
+
+.fixwidth video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+<<<<<<< HEAD
+}
+=======
+.fixwidth .container {
+  position: relative;
+  z-index: 2;
+}
+
+.fixwidth .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+>>>>>>> 84b3c9a1e8f3a4c7e9a766ad8bcea39cfb6745c6
