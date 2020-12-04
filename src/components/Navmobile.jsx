@@ -87,6 +87,7 @@ const Navmobile = () => {
                 </Nav>
             </Navbar.Collapse>
             <Navbar.Brand href="#home"><img className={classes.icon} src={logomb} /></Navbar.Brand>
+
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Navbar>
 
