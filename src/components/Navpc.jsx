@@ -25,7 +25,7 @@ const Navpc = () => {
                 <Col xs="2">
                     <Navbar.Brand href="#home"> <img className={classes.icon} src={logopc} /></Navbar.Brand>
                 </Col>
-                <Col md="16" lg="12" xl="10">
+                <Col lg="12" xl="10">
 
                     <div className={classes.navbar}>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -45,9 +45,11 @@ const Navpc = () => {
                                             </div>
                                             <div className={classes.dropchoice}>
                                                 <Dropdown.Menu className={classes.dropdown_menu}>
-                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/3.1">Оптимизация скорости</Dropdown.Item>
-                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/3.2">Another action</Dropdown.Item>
-                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/3.3">Something</Dropdown.Item>
+                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/1.1">Миграция</Dropdown.Item>
+                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/1.2">Бэкапы</Dropdown.Item>
+                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/1.3">Аудит безопасности</Dropdown.Item>
+                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/1.4">Оптимизация скорости</Dropdown.Item>
+                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/1.5">Переезд на HTTPS</Dropdown.Item>
                                                 </Dropdown.Menu>
                                             </div>
                                         </Dropdown>
@@ -61,8 +63,6 @@ const Navpc = () => {
                                             <div className={classes.downchoice}>
                                                 <a href="#features"> Реклама</a>
                                             </div>
-
-
                                         </li>
                                         <li>
                                             <Dropdown className={classes.dropdown}>
@@ -71,11 +71,14 @@ const Navpc = () => {
                                                         О нас
                                                 </Dropdown.Toggle>
                                                 </div>
-                                                <Dropdown.Menu className={classes.dropdown_menu}>
-                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/3.1">Action</Dropdown.Item>
-                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/3.2">Another action</Dropdown.Item>
-                                                    <Dropdown.Item className={classes.dropdown_item} href="#action/3.3">Something</Dropdown.Item>
-                                                </Dropdown.Menu>
+                                                <div className={classes.dropchoice}>
+                                                    <Dropdown.Menu className={classes.dropdown_menu1}>
+                                                        <Dropdown.Item className={classes.dropdown_item1} href="#action/2.1">Команда</Dropdown.Item>
+                                                        <Dropdown.Item className={classes.dropdown_item1} href="#action/2.2">DRUPALGIVE</Dropdown.Item>
+                                                        <Dropdown.Item className={classes.dropdown_item1} href="#action/2.3">Блог</Dropdown.Item>
+                                                        <Dropdown.Item className={classes.dropdown_item1} href="#action/2.4">Курсы DRUPAL</Dropdown.Item>
+                                                    </Dropdown.Menu>
+                                                </div>
                                             </Dropdown>
                                         </li>
                                         <li>
@@ -87,8 +90,6 @@ const Navpc = () => {
                                             <div className={classes.downchoice}>
                                                 <a href="#features"> Контакты</a>
                                             </div>
-
-
                                         </li>
                                     </ul>
                                 </div>
