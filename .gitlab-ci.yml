@@ -1,9 +1,7 @@
 image: node:latest
 
 pages:
-  cache:
-    paths:
-    - node_modules/
+  stage: deploy
   script:
   - npm install
   - npm run build
