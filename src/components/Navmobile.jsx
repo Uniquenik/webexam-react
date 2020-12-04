@@ -5,8 +5,6 @@ import classes from './css-modules/Navmobile.module.css';
 const Navmobile = () => {
     return (
         <Navbar inverse fluid fixed="bottom" bg="light" expand="lg" className={classes.navbarmobile}>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-            <Navbar.Toggle inverse aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
                     <Nav.Link href="#home">Home</Nav.Link>
@@ -20,6 +18,8 @@ const Navmobile = () => {
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
+            <Navbar.Brand href="#home">Re</Navbar.Brand>
+            <Navbar.Toggle inverse aria-controls="basic-navbar-nav" />
         </Navbar>
 
 
