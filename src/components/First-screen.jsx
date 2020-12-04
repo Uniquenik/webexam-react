@@ -3,9 +3,17 @@ import { Navbar, Dropdown, Row, Col, Container } from "react-bootstrap";
 import classes from './css-modules/First-screen.module.css';
 import golden_finger from './../pictures/cup.png';
 import Nav from './Navpc.jsx';
+import video from './../pictures/video.mp4';
 
 const First_screen = () => {
   return (
+    <div>
+      <Container >
+      <video loop="loop" autoplay="" muted="">
+      <source src={video} type="video/mp4"/>
+     </video>
+     </Container>
+     <div className={classes.background}></div>
     <Container fluid="true" className={classes.main_screen}>
       <Container className={classes.first_screen_wrapper}>
       <Nav />
@@ -74,6 +82,7 @@ const First_screen = () => {
       </Row>
     </Container>
   </Container>
+  </div>
   )
 }
 
