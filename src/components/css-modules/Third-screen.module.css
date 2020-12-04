@@ -1,14 +1,12 @@
 .third_screen {
-    font-family: 'Montserrat', sans-serif !important;
-    font-style: normal;
-    background-color: white;
-    padding-bottom: 100px;
-    padding-top: 100px;
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  background-color: white;
+  padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .third_screen_wrapper {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
 }
 
 .title {
@@ -19,11 +17,11 @@
 }
 
 .cards_wrapper{
-  margin-right: 5px;
+  margin-top: 0px;
 }
 
 .card {
-  height: 300px;
+  height: 330px;
   margin-bottom: 10px;
   margin-right: -20px;
   box-shadow: 20px 20px 40px rgba(5,12,51,.05);
@@ -42,21 +40,29 @@
   font-size: 18px;
 }
 .card_text {
+  position: relative;
   font-weight: 500;
   font-size: 16px;
+  z-index: 10;
 }
 
-
-
+.card_icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
 
 @media screen and (max-device-width: 767px) {
-  .title {
-    font-size: 23px;
-  }
   .card {
-    width: 400px;
+    height: 260px;
   }
   .cards_wrapper{
+    margin-top: -30px;
   }
-
+}
+@media screen and (max-device-width: 991px) {
+  .title {
+    font-size: 25px;
+  }
 }
