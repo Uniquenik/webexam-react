@@ -18,7 +18,7 @@ const Navmobile = () => {
                     </NavDropdown>
                 </Nav>
             </Navbar.Collapse>
-            <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+            <Navbar.Brand href="#home">Re</Navbar.Brand>
             <Navbar.Toggle inverse aria-controls="basic-navbar-nav" />
         </Navbar>
 
