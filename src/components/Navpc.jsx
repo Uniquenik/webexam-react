@@ -26,7 +26,6 @@ const Navpc = () => {
                     <Navbar.Brand href="#home"> <img className={classes.icon} src={logopc} /></Navbar.Brand>
                 </Col>
                 <Col lg="12" xl="10">
-
                     <div className={classes.navbar}>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
