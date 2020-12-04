@@ -6,8 +6,7 @@
 }
 
 .first_screen_wrapper {
-  padding-left: 0px !important;
-  padding-right: 0px !important;
+
 }
 
 .title {
@@ -154,4 +153,3 @@ video {
   z-index: 0;
   background-color: rgba(0,0,0,.8);
 }
-

@@ -8,12 +8,12 @@ import video from './../pictures/video.mp4';
 const First_screen = () => {
   return (
     <div>
-      <Container >
+      {/*<Container >
       <video loop="loop" autoplay="" muted="">
       <source src={video} type="video/mp4"/>
      </video>
      </Container>
-     <div className={classes.background}></div>
+     <div className={classes.background}></div> */}
     <Container fluid="true" className={classes.main_screen}>
       <Container className={classes.first_screen_wrapper}>
       <Nav />

@@ -86,11 +86,7 @@ const Navmobile = () => {
                     </div>
                 </Nav>
             </Navbar.Collapse>
-<<<<<<< HEAD
-            <Navbar.Brand href="#home">Re</Navbar.Brand>
-=======
             <Navbar.Brand href="#home"><img className={classes.icon} src={logomb} /></Navbar.Brand>
->>>>>>> 9d8efe635e085f5c17d8b864016f7015b2c35a18
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Navbar>
 
