@@ -12,7 +12,7 @@ const First_screen = () => {
       {/*First screen*/}
       <Row>
         {/*Тайтл и описание на главной*/}
-        <Col lg="6" md="12" sm="6">
+        <Col lg="6" xs="12">
           <h1 className={classes.title}>
             Поддержка
           <br />cайтов на Drupal
@@ -26,7 +26,7 @@ const First_screen = () => {
           </div>
         </Col>
         {/*6 иконок на главной*/}
-        <Col lg="6" md="12" sm="6">
+        <Col lg="6" xs="12">
           <Row mb="5" className={classes.second_section}>
             <Col sm="4" xs="6" className={classes.second_section_comp_wrapper}>
               <div className={classes.second_section_component}>
