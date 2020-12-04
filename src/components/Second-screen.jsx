@@ -9,6 +9,7 @@ import icon_5 from './../pictures/competency-5.svg';
 import icon_6 from './../pictures/competency-6.svg';
 import icon_7 from './../pictures/competency-7.svg';
 import icon_8 from './../pictures/competency-8.svg';
+import drupal from './../pictures/drupal-coder.svg';
 
 
 const Second_screen = () => {
