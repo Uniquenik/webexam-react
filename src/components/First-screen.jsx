@@ -14,7 +14,7 @@ const First_screen = () => {
                 <source src={video} type="video/mp4" />
               </video>
             </div>
-            {/*<div className={classes.background}></div>*/}
+            <div className={classes.background}></div>
           </div>
       <Container fluid="true" className={classes.main_screen}>
         <Container className={classes.first_screen_wrapper}>

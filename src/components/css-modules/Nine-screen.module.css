@@ -1,0 +1,58 @@
+.h2 {
+    text-align: center;
+}
+.maincontainer {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    padding-top: 35px;
+    padding-bottom: 110px;
+}
+.slickbuttoncontainer {
+    padding-left:15px;
+    padding-right: 15px;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-sizing: border-box;
+    box-shadow: 0 4px 60px rgba(162,162,162,.25);
+    border-radius: 5px;
+
+}
+.slickcontainer {
+    padding-left: 0px;
+    box-sizing: content-box;
+    padding-bottom: 20px;
+}
+.slide {
+    padding-left:15px;
+    padding-right: 15px;
+}
+
+.picture {
+    padding-bottom: 40px;
+}
+.text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #050c33;
+    padding-bottom: 15px;
+}
+.sign {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #838b9c;
+}
+.buttons {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left:15px;
+    padding-right: 15px;
+}
+.slick-slide {
+    height:200px;
+    /*Чудодейственный костыль*/
+ }
