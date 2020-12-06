@@ -8,24 +8,21 @@
     padding-bottom: 110px;
 }
 .slickbuttoncontainer {
-    padding-left:15px;
-    padding-right: 15px;
     padding-top:20px;
     padding-bottom: 20px;
     border: 1px solid rgba(0,0,0,.1);
-    box-sizing: border-box;
     box-shadow: 0 4px 60px rgba(162,162,162,.25);
     border-radius: 5px;
-
 }
 .slickcontainer {
-    padding-left: 0px;
-    box-sizing: content-box;
-    padding-bottom: 20px;
-}
-.slide {
     padding-left:15px;
     padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.slide{
+    display: inline-block;
+    height: auto;
 }
 
 .picture {
@@ -43,8 +40,9 @@
     font-size: 14px;
     line-height: 1.2;
     color: #838b9c;
+    padding-bottom: 15px;
 }
-.buttons {
+.buttonsblock {
     text-align: center;
     border-top: 1px solid rgba(0,0,0,.1);
     padding-top:20px;
@@ -52,7 +50,39 @@
     padding-left:15px;
     padding-right: 15px;
 }
-.slick-slide {
-    height:200px;
-    /*Чудодейственный костыль*/
- }
+.buttons button{
+    text-decoration: none;
+    color: black;
+}
+.buttons button:hover{
+    color: black;
+    text-decoration: none;
+}
+.buttons {
+    display: inline-flex;
+}
+.pages{
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 28px;
+    display: inline-flex;
+}
+.pagesn{
+    color: #e0e0e0;
+}
+@media (min-width: 992px) {
+    .slickbuttoncontainer {
+        display: inline-flex;
+        padding-left: 70px;
+        padding-top:65px;
+        padding-bottom: 65px;
+    }
+    .buttonsblock {
+        height: 100%;
+        border-top: none;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+    .buttons {
+        
+    }
+}
