@@ -3,6 +3,7 @@ image: node:latest
 pages:
   stage: deploy
   script:
+  - npm cache clean
   - npm install
   - npm run build
   - rm -rf public
