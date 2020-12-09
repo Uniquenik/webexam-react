@@ -1,27 +1,15 @@
-image: node:latest 
+image: node:latest
 
-stages:
-    - build
-    - deploy
-build:
-    stage: build
-    script:
-        - echo "Building deploy package"
-        - yarn install
-        - yarn build
-        - echo "Build successful"
-    artifacts:
-        expire_in: 1 hour
-        paths:
-            - build
-deploy_production:
-    stage: deploy
-    script:
-        - echo "Deploying to server"
-        - cp -rv build/* /var/www/html/<folder/
-        - echo "Deployed"
-    environment:
-        name: production
-        url: http://n.vanychenko.gitlab.io/webexam-react/
-    only:
-        - master
+pages:
+  stage: deploy
+  script:
+  - npm cache clean
+  - npm install
+  - npm run build
+  - rm -rf public
+  - mv build public
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
