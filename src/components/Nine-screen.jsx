@@ -4,7 +4,7 @@ import { Container, Button, Col } from "react-bootstrap";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from './css-modules/Nine-screen.module.css';
-import pic1 from './../pictures/lpcma_rus_v4.jpg'
+import pic1 from './../pictures/lpcma_rus_v4.jpg';
 
 export default class Nine_screen extends Component {
     state = {
@@ -33,10 +33,10 @@ export default class Nine_screen extends Component {
         };
         return (
             <div>
-                <Col xs="12">
+                <Col xs="12" className={classes.mobilelen}>
                     <h2 className={classes.h2}>Отзывы</h2>
                     <Container fluid className={classes.maincontainer}>
-                        <Col lg={{ span: 10, offset: 1 }}>
+                        <Col xl={{ span: 10, offset: 1 }}>
 
                             <Container fluid className={classes.slickbuttoncontainer}>
                                 <Col lg="8">
@@ -55,39 +55,52 @@ export default class Nine_screen extends Component {
                                             </div>
                                             <div>
                                                 <h3>2</h3>
-                                                <p>Hello</p>
+                                                <p>See ....</p>
+                                                <p>Height is adaptive</p>
                                             </div>
                                             <div>
                                                 <h3>3</h3>
                                                 <p>See ....</p>
                                                 <p>Height is adaptive</p>
+                                                <p>Wowwww</p>
                                             </div>
                                             <div>
                                                 <h3>4</h3>
+                                                <p>See ....</p>
+                                                <p>Height is adaptive</p>
+                                                <p>Wowwww</p>
                                             </div>
                                             <div>
                                                 <h3>5</h3>
+                                                <p>See ....</p>
+                                                <p>Height is adaptive</p>
+                                                <p>Wowwww</p>
                                             </div>
                                             <div>
                                                 <h3>6</h3>
+                                                <p>See ....</p>
+                                                <p>Height is adaptive</p>
+                                                <p>Wowwww</p>
                                             </div>
                                         </Slider>
                                     </Container>
                                 </Col>
-                                <Col lg="4">
-                                    <div className={classes.buttonsblock}>
-                                        <div className={classes.buttons}>
-                                            <div>
-                                                <Button variant="link" onClick={this.previous}>l</Button>
-                                            </div>
-                                            <div className={classes.pages}>
-                                                0{this.state.activeSlide + 1} <div className={classes.pagesn}>/08 </div>
-                                            </div>
-                                            <div>
-                                                <Button variant="link" onClick={this.next}>r</Button>
+                                <Col lg="4" >
+                                    <div className={classes.center}>
+                                    </div>
+                                        <div className={classes.buttonsblock}>
+                                            <div className={classes.buttons}>
+                                                <div>
+                                                    <Button variant="link" onClick={this.previous}>l</Button>
+                                                </div>
+                                                <div className={classes.pages}>
+                                                    0{this.state.activeSlide + 1} <div className={classes.pagesn}>/08 </div>
+                                                </div>
+                                                <div>
+                                                    <Button variant="link" onClick={this.next}>r</Button>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                 </Col>
                             </Container>
                         </Col>

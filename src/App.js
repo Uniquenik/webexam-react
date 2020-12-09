@@ -9,6 +9,7 @@ import Fourth_screen from './components/Fourth-screen.jsx';
 import Sixth_screen from './components/Sixth-screen.jsx';
 import Seventh_screen from './components/Seventh-screen.jsx';
 import Nine_screen from './components/Nine-screen.jsx';
+import Ten_screen from './components/Ten-screen.jsx';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
         <Sixth_screen />
         <Seventh_screen />
         <Nine_screen />
+        <Ten_screen />
 
     </div>
   );

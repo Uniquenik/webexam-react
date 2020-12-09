@@ -7,7 +7,15 @@
     font-style: normal;
     padding-top: 35px;
     padding-bottom: 110px;
+    padding-left: 0%;
+    padding-right: 0%;
 }
+
+.mobilelen {
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
 .slickbuttoncontainer {
     padding-top:20px;
     padding-bottom: 20px;
@@ -78,8 +86,13 @@
         padding-top:65px;
         padding-bottom: 65px;
     }
+    .center {
+        height: 45%;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
     .buttonsblock {
-        height: 100%;
+        padding-top: 0px;
+        height: 60%;
         border-top: none;
         border-left: 1px solid rgba(0,0,0,.1);
     }
@@ -87,3 +100,13 @@
 
     }
 }
+<<<<<<< HEAD
+=======
+@media (min-width: 720px) {
+    .mobilelen {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+}
+>>>>>>> c1d1433d7d55732864d723916ba7ed7010da9ed6
