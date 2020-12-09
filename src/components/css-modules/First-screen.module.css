@@ -155,7 +155,7 @@ video {
 .fixwidth {
   position: absolute;
   background-color: black;
-  height: 200%;
+  height: 150%;
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -175,11 +175,8 @@ video {
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
 
-<<<<<<< HEAD
 }
-=======
 .fixwidth .container {
   position: relative;
   z-index: 2;
@@ -195,4 +192,3 @@ video {
   opacity: 0.5;
   z-index: 1;
 }
->>>>>>> 84b3c9a1e8f3a4c7e9a766ad8bcea39cfb6745c6

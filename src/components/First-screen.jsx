@@ -25,12 +25,12 @@ const First_screen = () => {
             <Col lg="6" xs="12">
               <h1 className={classes.title}>
                 Поддержка
-          <br />cайтов на Drupal
-          </h1>
+                <br />cайтов на Drupal
+              </h1>
               <div className={classes.description}>
                 Сопровождение и поддержка сайтов
-            <br /> на CMS Drupal любых версий и запущенности
-          </div>
+                <br /> на CMS Drupal любых версий и запущенности
+              </div>
               <div className={classes.button_section}>
                 <a href="" className={classes.btn_tariff}>Тарифы</a>
               </div>
@@ -42,11 +42,11 @@ const First_screen = () => {
                   <div className={classes.second_section_component}>
                     <div className={classes.second_section_title} style={{ fontSize: '45px', marginTop: '-35px' }}>
                       #1
-                  <img alt="" src={golden_finger}></img>
+                      <img alt="" src={golden_finger}></img>
                     </div>
                     <div className={classes.second_section_description}>
                       Drupal - разработчик в России по версии Рейтинга Рунета
-                </div>
+                    </div>
                   </div>
                 </Col>
                 <Col sm="4" xs="6" className={classes.second_section_comp_wrapper}>

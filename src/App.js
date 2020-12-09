@@ -5,6 +5,8 @@ import Navmobile from './components/Navmobile.jsx';
 import First_screen from './components/First-screen.jsx';
 import Second_screen from './components/Second-screen.jsx';
 import Third_screen from './components/Third-screen.jsx';
+import Fourth_screen from './components/Fourth-screen.jsx';
+
 
 
 function App() {
@@ -14,6 +16,7 @@ function App() {
         <First_screen />
         <Second_screen />
         <Third_screen />
+        <Fourth_screen />
     </div>
   );
 }
