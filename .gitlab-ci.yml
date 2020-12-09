@@ -13,3 +13,8 @@ pages:
     - public
   only:
   - master
+  artifacts:
+    paths:
+      - /file/.logs/
+      when: on_failure
+      expire_in: 1 day
