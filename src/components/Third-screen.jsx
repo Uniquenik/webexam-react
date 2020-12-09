@@ -9,14 +9,12 @@ import support5 from './../pictures/support5.svg';
 import support6 from './../pictures/support6.svg';
 import support7 from './../pictures/support7.svg';
 import support8 from './../pictures/support8.svg';
-
-
-
+import Fourth_screen from './Fourth-screen.jsx';
 
 const Third_screen = () => {
   return (
     <Container fluid="true" className={classes.third_screen}>
-      <Container className={classes.third_screen_wrapper}>
+      <Container className={classes.third_screen_wrapper} >
         <h2 className={classes.title}>Поддержка <br /> от Drupal-coder</h2>
         <Row className={classes.cards_wrapper}>
           <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
