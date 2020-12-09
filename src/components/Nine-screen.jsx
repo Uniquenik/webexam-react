@@ -5,6 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import classes from './css-modules/Nine-screen.module.css';
 import pic1 from './../pictures/lpcma_rus_v4.jpg';
+import bracket from './../pictures/brackets.svg';
 
 export default class Nine_screen extends Component {
     state = {
@@ -34,8 +35,11 @@ export default class Nine_screen extends Component {
         return (
             <div>
                 <Col xs="12" className={classes.mobilelen}>
+                    <div className={classes.brackets}><img className={classes.image}src={bracket}/>
+                    <img className={classes.image2}src={bracket}/></div>
                     <h2 className={classes.h2}>Отзывы</h2>
                     <Container fluid className={classes.maincontainer}>
+                    <div className={classes.shadow1}></div>
                         <Col xl={{ span: 10, offset: 1 }}>
 
                             <Container fluid className={classes.slickbuttoncontainer}>

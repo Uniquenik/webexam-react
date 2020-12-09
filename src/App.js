@@ -12,7 +12,6 @@ import Seventh_screen from './components/Seventh-screen.jsx';
 import Nine_screen from './components/Nine-screen.jsx';
 import Ten_screen from './components/Ten-screen.jsx';
 
-
 function App() {
   return (
     <div>
@@ -21,7 +20,11 @@ function App() {
         <Second_screen />
         <Third_screen />
         <Fourth_screen />
+<<<<<<< HEAD
         <Five_screen />
+=======
+
+>>>>>>> 8d761c1b2a39cd87ff083621ae08d157bfbe7a50
         <Sixth_screen />
         <Seventh_screen />
         <Nine_screen />

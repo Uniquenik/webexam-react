@@ -66,39 +66,12 @@ export default class Ten_screen extends Component {
         };
         return (
             <div>
-                <h2 className={classes.h2}>С нами работают</h2>
-                <div className={classes.h2}>Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</div>
-                <Container fluid className={classes.maincontainer}>
-                    <Container fluid className={classes.firstslick}>
-                        <Slider {...settings} className={classes.st}>
-                            <div className={classes.padding}>
-                                <div className={classes.border}>
-                                    <img src={logo0} className={classes.img} />
-                                </div>
-                            </div>
-                            <div className={classes.padding}>
-                                <div className={classes.border}>
-                                    <img src={logo1} className={classes.img} />
-                                </div>
-                            </div>
-                            <div className={classes.padding}>
-                                <div className={classes.border}>
-                                    <img src={logo2} className={classes.img} />
-                                </div>
-                            </div>
-                            <div className={classes.padding}>
-                                <div className={classes.border}>
-                                    <img src={logo3} className={classes.img} />
-                                </div>
-                            </div>
-                            <div className={classes.padding}>
-                                <div className={classes.border}>
-                                    <img src={logo1} className={classes.img} />
-                                </div>
-                            </div>
-                        </Slider>
-                        <Container fluid className={classes.secondslick}>
-                            <Slider {...settings2}>
+                <div className={classes.font}>
+                    <h2 className={classes.h2}>С нами работают</h2>
+                    <div className={classes.h2}>Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</div>
+                    <Container fluid className={classes.maincontainer}>
+                        <Container fluid className={classes.firstslick}>
+                            <Slider {...settings} className={classes.st}>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
                                         <img src={logo0} className={classes.img} />
@@ -125,12 +98,38 @@ export default class Ten_screen extends Component {
                                     </div>
                                 </div>
                             </Slider>
-
-
-
+                            <Container fluid className={classes.secondslick}>
+                                <Slider {...settings2}>
+                                    <div className={classes.padding}>
+                                        <div className={classes.border}>
+                                            <img src={logo0} className={classes.img} />
+                                        </div>
+                                    </div>
+                                    <div className={classes.padding}>
+                                        <div className={classes.border}>
+                                            <img src={logo1} className={classes.img} />
+                                        </div>
+                                    </div>
+                                    <div className={classes.padding}>
+                                        <div className={classes.border}>
+                                            <img src={logo2} className={classes.img} />
+                                        </div>
+                                    </div>
+                                    <div className={classes.padding}>
+                                        <div className={classes.border}>
+                                            <img src={logo3} className={classes.img} />
+                                        </div>
+                                    </div>
+                                    <div className={classes.padding}>
+                                        <div className={classes.border}>
+                                            <img src={logo1} className={classes.img} />
+                                        </div>
+                                    </div>
+                                </Slider>
+                            </Container>
                         </Container>
                     </Container>
-                </Container>
+                </div>
             </div>
         );
     }

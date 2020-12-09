@@ -2,13 +2,62 @@
     padding-top: 40px;
     text-align: center;
 }
+
+.image {
+    height: 100%;
+    width: auto;
+}
+.image2 {
+    padding-left: 10%;
+    height: 100%;
+    width: auto;
+}
+
 .maincontainer {
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
-    padding-top: 35px;
-    padding-bottom: 110px;
+    margin-top: 60px;
+    margin-bottom: 110px;
     padding-left: 0%;
     padding-right: 0%;
+    background-color: white;
+}
+.maincontainer:after {
+    content: ''; /* Вывод тени */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 115px; /* Положение снизу */
+    left: 64px; /* Положение слева */
+    right: 64px;
+    bottom:0px ;
+    opacity: 0.5;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 60px rgba(162,162,162,.25);
+    z-index: -1; /* Опускаем ниже блока */
+   }
+
+.maincontainer::before {
+    content: ''; /* Вывод тени */
+    position: absolute; /* Абсолютное позиционирование */
+    top: 95px; /* Положение снизу */
+    left: 128px; /* Положение слева */
+    right: 128px;
+    bottom:0px ;
+    opacity: 0.5;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 60px rgba(162,162,162,.25);
+    z-index: -1; /* Опускаем ниже блока */
+   }
+
+.brackets {
+    position: absolute;
+    height: 20vw;
+    width: 20vw;
+    left: -5%;
+    top: 0%;
+    z-index: -3;
+    opacity: 0.05;
 }
 
 .mobilelen {
@@ -106,4 +155,9 @@
         padding-left: 15px;
         padding-right: 15px;
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+>>>>>>> 8d761c1b2a39cd87ff083621ae08d157bfbe7a50
