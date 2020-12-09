@@ -4,7 +4,7 @@ pages:
   stage: deploy
   script:
   - npm cache clean --force
-  - npm install
+  - npm install -g npm
   - npm run build
   - rm -rf public
   - mv build public
