@@ -121,7 +121,11 @@
 .fixwidth {
   position: absolute;
   background-color: black;
+<<<<<<< HEAD
+  height: 150%;
+=======
   height: 165%;
+>>>>>>> 937ed00fc6270f665f25e66c24454be38c9ddba3
   min-height: 25rem;
   width: 100%;
   overflow: hidden;
@@ -141,8 +145,11 @@
   -moz-transform: translateX(-50%) translateY(-50%);
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-}
 
+<<<<<<< HEAD
+}
+=======
+>>>>>>> 937ed00fc6270f665f25e66c24454be38c9ddba3
 .fixwidth .container {
   position: relative;
   z-index: 2;
@@ -158,6 +165,8 @@
   opacity: 0.8;
   z-index: 1;
 }
+<<<<<<< HEAD
+=======
 .background{
   position: absolute;
   left: 50%;
@@ -176,3 +185,4 @@
     height: 100%;
   }
 }
+>>>>>>> 937ed00fc6270f665f25e66c24454be38c9ddba3
