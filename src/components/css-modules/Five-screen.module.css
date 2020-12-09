@@ -1,0 +1,63 @@
+.screen {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  padding-top: 250px;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #050c33;
+  padding-bottom: 15px;
+}
+
+.card_title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #f14d34;
+  border-bottom: 2px solid lightgray;
+  padding-bottom: 20px;
+}
+
+ol{
+  list-style-type: none;
+  margin-left: -40px;
+}
+ol > li{
+    padding-left: 20px;
+    margin: 10px;
+    position: relative;
+}
+ol > li:before {
+  content: '✔';
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #F69C8F;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #f14d34;
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #F14D34;
+  border-radius: 5px;
+  padding: 22px 20px;
+  width: 220px;
+  max-width: 100%;
+  margin-bottom: 45px;
+}
+
+.btn:hover{
+  text-decoration: none;
+  color: #fff;
+  background-color: #f14d34;
+  border: 2px solid #f14d34;
+
+}
