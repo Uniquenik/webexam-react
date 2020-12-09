@@ -15,6 +15,6 @@ pages:
   - master
   artifacts:
     paths:
-    - /file/.logs/
+    - /log.txt
     when: on_failure
     expire_in: 1 day
