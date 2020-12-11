@@ -1,0 +1,71 @@
+.maincontainer {
+    background: linear-gradient(to right, black, #050c33);
+    padding-top: 50px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    position: relative;
+}
+.contacts {
+    color:white;
+    line-height: 1.35;
+    font-size: 32px;
+    font-weight: 700;
+}
+.contactsmail {
+    color:white;
+    line-height: 1.35;
+    font-size: 18px;
+    font-weight: 700;
+}
+.contactsimg{
+    color:lightgray;
+    padding-right: 15px;
+}
+.ddiv {
+    position: absolute;
+    width: 30vw;
+    height: min-content;
+    left: 30%;
+    top: 0%;
+    z-index: 0;
+}
+.dimg {
+    width: 35vw;
+    height: auto;
+}
+.h2 {
+    text-align: center;
+    color:white;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.h21{
+    line-height: 1.35;
+    font-size: 14px;
+    font-weight: 300;
+    color:lightgray;
+    padding-bottom: 20px;
+}
+.formback {
+    background-color: transparent;
+    border:1px solid;
+}
+.formback:focus{
+    background-color: transparent;
+}
+
+
+@media (min-width: 992px) {
+    .h2 {
+        font-size: 38px;
+        text-align: left;
+    }
+    .dimg {
+        width: 22vw;
+    }
+    .ddiv {
+        left:37%;
+    }
+    }
+  

@@ -19,6 +19,7 @@
 .number {
     color: gray !important;
     font-size: 12px;
+    margin-bottom: 50px;
 }
 .cardtitle{
     font-weight: bold;
@@ -42,7 +43,7 @@
 
 @media (min-width: 992px) {
     .h2 {
-        font-size: 42px;
+        font-size: 38px;
     }
     }
   
