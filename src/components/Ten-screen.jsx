@@ -68,7 +68,7 @@ export default class Ten_screen extends Component {
             <div>
                 <div className={classes.font}>
                     <h2 className={classes.h2}>С нами работают</h2>
-                    <div className={classes.h2}>Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</div>
+                    <div className={classes.h21}>Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</div>
                     <Container fluid className={classes.maincontainer}>
                         <Container fluid className={classes.firstslick}>
                             <Slider {...settings} className={classes.st}>

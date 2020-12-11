@@ -36,9 +36,9 @@ const Navpc = () => {
                                             <a href="#features"> Поддержка Drupal</a>
                                         </div>
                                         </li>
-                                        <li><Dropdown className={classes.dropdown}>
+                                        <li><Dropdown className={classes.dropdown} >
                                             <div className={classes.downchoice}>
-                                                <Dropdown.Toggle as={CustomToggle} classItem={classes.toggle} id="dropdown-custom-components">
+                                                <Dropdown.Toggle as={CustomToggle} classItem={classes.toggle} id="dropdown-custom-components" >
                                                     Администрирование
                                                 </Dropdown.Toggle>
                                             </div>

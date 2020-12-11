@@ -35,63 +35,62 @@ export default class Nine_screen extends Component {
         return (
             <div>
                 <Col xs="12" className={classes.mobilelen}>
-                    <div className={classes.brackets}><img className={classes.image}src={bracket}/>
-                    <img className={classes.image2}src={bracket}/></div>
+                    <div className={classes.brackets}><img className={classes.image} src={bracket} />
+                        <img className={classes.image2} src={bracket} /></div>
                     <h2 className={classes.h2}>Отзывы</h2>
-                    <Container fluid className={classes.maincontainer}>
-                    <div className={classes.shadow1}></div>
-                        <Col xl={{ span: 10, offset: 1 }}>
-
-                            <Container fluid className={classes.slickbuttoncontainer}>
-                                <Col lg="8">
-                                    <Container className={classes.slickcontainer}>
-                                        <Slider {...settings} ref={c => (this.slider = c)}>
-                                            <div className={classes.slide}>
-                                                <div className={classes.picture}>
-                                                    <img className={classes} src={pic1} />
+                    <Container className={classes.maincontainer}>
+                            <Col xl={{span:10, offset:1}} className={classes.back}>
+                            <div className={classes.shadow1}></div>
+                                <Container fluid className={classes.slickbuttoncontainer}>
+                                    <Col lg="8">
+                                        <Container className={classes.slickcontainer}>
+                                            <Slider {...settings} ref={c => (this.slider = c)}>
+                                                <div className={classes.slide}>
+                                                    <div className={classes.picture}>
+                                                        <img className={classes} src={pic1} />
+                                                    </div>
+                                                    <div className={classes.text}>
+                                                        Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть, привели меня на сайт и, в итоге, к ребятам из Drupal-coder. И вот уже практически полгода как не проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! Починили все, что не работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж мелких починок и доработок - не счесть! И главное - все качественно и быстро (не взирая на не самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит и предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман починят, поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. Надеюсь, что наше сотрудничество затянется надолго! Спасибо!!!
                                                 </div>
-                                                <div className={classes.text}>
-                                                    Долгие поиски единственного и неповторимого мастера на многострадальный сайт www.cielparfum.com, который был собран крайне некомпетентным программистом и раз в месяц стабильно грозил погибнуть, привели меня на сайт и, в итоге, к ребятам из Drupal-coder. И вот уже практически полгода как не проходит и дня, чтобы я не поудивлялась и не порадовалась своему везению! Починили все, что не работало - от поиска до отображения меню. Провели редизайн - не отходя от желаемого, но со своими существенными и качественными дополнениями. Осуществили ряд проектов - конкурсы, тесты и тд. А уж мелких починок и доработок - не счесть! И главное - все качественно и быстро (не взирая на не самый "быстрый" тариф). Есть вопросы - замечательный Алексей всегда подскажет, поддержит, отремонтирует и/или просто сделает с нуля. Есть задумка для реализации - замечательный Сергей обсудит и предложит идеальный вариант. Есть проблема - замечательные Надежда и Роман починят, поправят, сделают! Ребята доказали, что эта CMS - мощная и грамотная система управления. Надеюсь, что наше сотрудничество затянется надолго! Спасибо!!!
+                                                    <div className={classes.sign}>
+                                                        С уважением, Наталья Сушкова руководитель Отдела веб-проектов Группы компаний «Си Эль парфюм»&nbsp;<a href="http://www.cielparfum.com/">http://www.cielparfum.com/</a>
+                                                    </div>
                                                 </div>
-                                                <div className={classes.sign}>
-                                                    С уважением, Наталья Сушкова руководитель Отдела веб-проектов Группы компаний «Си Эль парфюм»&nbsp;<a href="http://www.cielparfum.com/">http://www.cielparfum.com/</a>
+                                                <div>
+                                                    <h3>2</h3>
+                                                    <p>See ....</p>
+                                                    <p>Height is adaptive</p>
                                                 </div>
-                                            </div>
-                                            <div>
-                                                <h3>2</h3>
-                                                <p>See ....</p>
-                                                <p>Height is adaptive</p>
-                                            </div>
-                                            <div>
-                                                <h3>3</h3>
-                                                <p>See ....</p>
-                                                <p>Height is adaptive</p>
-                                                <p>Wowwww</p>
-                                            </div>
-                                            <div>
-                                                <h3>4</h3>
-                                                <p>See ....</p>
-                                                <p>Height is adaptive</p>
-                                                <p>Wowwww</p>
-                                            </div>
-                                            <div>
-                                                <h3>5</h3>
-                                                <p>See ....</p>
-                                                <p>Height is adaptive</p>
-                                                <p>Wowwww</p>
-                                            </div>
-                                            <div>
-                                                <h3>6</h3>
-                                                <p>See ....</p>
-                                                <p>Height is adaptive</p>
-                                                <p>Wowwww</p>
-                                            </div>
-                                        </Slider>
-                                    </Container>
-                                </Col>
-                                <Col lg="4" >
-                                    <div className={classes.center}>
-                                    </div>
+                                                <div>
+                                                    <h3>3</h3>
+                                                    <p>See ....</p>
+                                                    <p>Height is adaptive</p>
+                                                    <p>Wowwww</p>
+                                                </div>
+                                                <div>
+                                                    <h3>4</h3>
+                                                    <p>See ....</p>
+                                                    <p>Height is adaptive</p>
+                                                    <p>Wowwww</p>
+                                                </div>
+                                                <div>
+                                                    <h3>5</h3>
+                                                    <p>See ....</p>
+                                                    <p>Height is adaptive</p>
+                                                    <p>Wowwww</p>
+                                                </div>
+                                                <div>
+                                                    <h3>6</h3>
+                                                    <p>See ....</p>
+                                                    <p>Height is adaptive</p>
+                                                    <p>Wowwww</p>
+                                                </div>
+                                            </Slider>
+                                        </Container>
+                                    </Col>
+                                    <Col lg="4" >
+                                        <div className={classes.center}>
+                                        </div>
                                         <div className={classes.buttonsblock}>
                                             <div className={classes.buttons}>
                                                 <div>
@@ -105,9 +104,9 @@ export default class Nine_screen extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                </Col>
-                            </Container>
-                        </Col>
+                                    </Col>
+                                </Container>
+                            </Col>
                     </Container>
                 </Col>
             </div>
