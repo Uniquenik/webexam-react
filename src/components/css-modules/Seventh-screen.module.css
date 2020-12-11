@@ -53,6 +53,7 @@
   text-align: center;
 }
 
+
 .btn_wrapper {
   text-align: center;
   padding: 20px;
@@ -62,12 +63,16 @@
   .component_description {
     padding-right: 30px;
   }
+  .component_wrapper{
+    padding: 40px;
+  }
 }
 
 @media (min-width: 768px) {
   .title {
     font-size: 40px;
   }
+
   .component_title {
     font-size: 22px;
   }

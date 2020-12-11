@@ -20,11 +20,7 @@ function App() {
         <Second_screen />
         <Third_screen />
         <Fourth_screen />
-<<<<<<< HEAD
         <Five_screen />
-=======
-
->>>>>>> 8d761c1b2a39cd87ff083621ae08d157bfbe7a50
         <Sixth_screen />
         <Seventh_screen />
         <Nine_screen />
