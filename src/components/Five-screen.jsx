@@ -7,7 +7,6 @@ const Five_screen = () => {
   return (
     <Container fluid="true" className={classes.screen}>
       <div className={classes.background}>
-        <img alt="" src={icon} />
       </div>
       <Container>
         <h1 className={classes.title}>Тарифы</h1>
