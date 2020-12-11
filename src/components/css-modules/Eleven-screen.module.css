@@ -1,0 +1,48 @@
+.maincontainer {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    margin-bottom: 50px;
+    padding-left:0%;
+    padding-right: 0%;
+}
+.h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+.cardhead {
+    padding-top: 10px;
+    background-color: white;
+    padding-bottom: 5px;
+}
+.number {
+    color: gray !important;
+    font-size: 12px;
+}
+.cardtitle{
+    font-weight: bold;
+}
+.cardfirst {
+    border:none;
+}
+.cardinfo {
+    line-height: 1.35;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 35px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-left: 3px solid #f14d34;
+    border-bottom: 3px solid #f14d34;
+    border-right: 3px solid #f14d34;
+}
+
+
+
+@media (min-width: 992px) {
+    .h2 {
+        font-size: 42px;
+    }
+    }
+  

@@ -4,6 +4,7 @@ import classes from './css-modules/First-screen.module.css';
 import golden_finger from './../pictures/cup.png';
 import Nav from './Navpc.jsx';
 import video from './../pictures/video.mp4';
+import drupal from './../pictures/drupal.svg';
 
 const First_screen = () => {
   return (
@@ -14,7 +15,7 @@ const First_screen = () => {
                 <source src={video} type="video/mp4" />
               </video>
             </div>
-            <div className={classes.background}></div>
+            <div className={classes.background}><img src={drupal}/></div>
           </div>
       <Container fluid="true" className={classes.main_screen}>
         <Container className={classes.first_screen_wrapper}>

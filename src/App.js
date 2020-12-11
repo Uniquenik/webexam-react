@@ -10,6 +10,7 @@ import Sixth_screen from './components/Sixth-screen.jsx';
 import Seventh_screen from './components/Seventh-screen.jsx';
 import Nine_screen from './components/Nine-screen.jsx';
 import Ten_screen from './components/Ten-screen.jsx';
+import Eleven_screen from './components/Eleven-screen.jsx';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Seventh_screen />
         <Nine_screen />
         <Ten_screen />
+        <Eleven_screen/>
 
     </div>
   );
