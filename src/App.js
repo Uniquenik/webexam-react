@@ -6,6 +6,7 @@ import First_screen from './components/First-screen.jsx';
 import Second_screen from './components/Second-screen.jsx';
 import Third_screen from './components/Third-screen.jsx';
 import Fourth_screen from './components/Fourth-screen.jsx';
+import Five_screen from './components/Five-screen.jsx';
 import Sixth_screen from './components/Sixth-screen.jsx';
 import Seventh_screen from './components/Seventh-screen.jsx';
 import Nine_screen from './components/Nine-screen.jsx';
@@ -20,6 +21,8 @@ function App() {
         <Second_screen />
         <Third_screen />
         <Fourth_screen />
+        <Five_screen />
+
 
         <Sixth_screen />
         <Seventh_screen />

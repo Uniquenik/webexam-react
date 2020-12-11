@@ -162,3 +162,11 @@
         font-size: 42px;
     }
 }
+
+
+@media (min-width: 720px) {
+    .mobilelen {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
