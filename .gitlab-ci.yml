@@ -14,6 +14,7 @@ pages:
   only:
   - master
   artifacts:
+    CI: true
     paths:
     - /log.txt
     when: on_failure
