@@ -68,7 +68,7 @@
 
 .card_text {
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
  ul.list {
@@ -112,7 +112,7 @@ li.list_item:before {
   text-decoration: none;
   color: white;
   background-color: #f14d34;
-  border: 2px solid #f14d34;
+  border: 1px solid #f14d34;
 
 }
 
