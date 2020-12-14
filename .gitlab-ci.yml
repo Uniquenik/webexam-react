@@ -3,20 +3,14 @@ image: node:latest
 pages:
   stage: deploy
   script:
-  - npm cache clean --force
-  - npm install --logevel verbose
+  - npm install
   - npm run build
   - rm -rf public
   - mv build public
+  variables: 
+    CI: "true"
   artifacts:
     paths:
     - public
   only:
   - master
-  artifacts:
-    paths:
-    - /log.txt
-    when: on_failure
-    expire_in: 1 day
-  variables: 
-    CI: "true"
