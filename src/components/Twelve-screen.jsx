@@ -10,7 +10,7 @@ const Twelve_screen = () => {
     return (
 
         <Container fluid className={classes.maincontainer}>
-            <div className={classes.ddiv}><img className={classes.dimg} src={dfly} /></div>
+            <div className={classes.ddiv}><img className={classes.dimg} src={dfly} alt="" /></div>
             <Container className={classes.cont}>
                 <Row>
                     <Col xs="12" md="5">
@@ -47,8 +47,8 @@ const Twelve_screen = () => {
                         </div>
                     </Col>
                     <Col xs="12" md="5">
-                        <div className={classes.contacts}><img src={phone} className={classes.contactsimg} />8 800 222-26-73</div>
-                        <div className={classes.contactsmail}><img src={mail} className={classes.contactsimg} />info@drupal-coder.ru</div>
+                        <div className={classes.contacts}><img src={phone} className={classes.contactsimg} alt="" />8 800 222-26-73</div>
+                        <div className={classes.contactsmail}><img src={mail} className={classes.contactsimg} alt=""/>info@drupal-coder.ru</div>
                     </Col>
                 </Row>
             </Container>
