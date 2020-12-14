@@ -4,7 +4,7 @@ import AccordionContext from "react-bootstrap/AccordionContext";
 import Card from "react-bootstrap/Card";
 import { Container } from "react-bootstrap";
 import classes from './css-modules/Eleven-screen.module.css';
-import AccordionToggle, { useAccordionToggle } from "react-bootstrap/AccordionToggle";
+import { useAccordionToggle } from "react-bootstrap/AccordionToggle";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 function CustomToggle({ children, eventKey, callback }) {

@@ -43,7 +43,7 @@ const Twelve_screen = () => {
 
                             <InputGroup>
                                 <FormControl className={classes.formback} as="textarea" aria-label="With textarea" />
-                            </InputGroup>
+    </InputGroup> 
                         </div>
                     </Col>
                     <Col xs="12" md="5">

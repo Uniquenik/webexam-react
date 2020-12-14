@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar, NavDropdown, Row, Col, Container, Dropdown, Nav } from "react-bootstrap";
+import { Navbar, Dropdown, Nav } from "react-bootstrap";
 import classes from './css-modules/Navmobile.module.css';
 import logomb from './../pictures/drupal-coder.svg'
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
-        href=""
+        href="/sas"
         ref={ref}
         onClick={(e) => {
             e.preventDefault();
@@ -32,7 +32,7 @@ const Navmobile = () => {
                             <li ><Dropdown className={classes.dropmobile}>
                                 <div className={classes.dropmobile_item}>
                                     <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                                        <a> Администрирование </a>
+                                        Администрирование 
                                     </Dropdown.Toggle>
                                 </div>
                                 <div className={classes.dropchoice}>
@@ -61,7 +61,7 @@ const Navmobile = () => {
                                 <Dropdown className={classes.dropdown}>
                                     <div className={classes.dropmobile_item}>
                                         <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                                            <a> О нас </a>
+                                            О нас
                                         </Dropdown.Toggle>
                                     </div>
                                     <Dropdown.Menu className={classes.dropdown_menu} show="true">
@@ -86,7 +86,7 @@ const Navmobile = () => {
                     </div>
                 </Nav>
             </Navbar.Collapse>
-            <Navbar.Brand href="#home"><img className={classes.icon} src={logomb} /></Navbar.Brand>
+            <Navbar.Brand href="#home"><img className={classes.icon} src={logomb} alt="" /></Navbar.Brand>
 
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
         </Navbar>

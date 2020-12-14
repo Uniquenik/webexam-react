@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavDropdown, Row, Col, Container, Dropdown, Nav } from "react-bootstrap";
+import { Navbar, Row, Col, Dropdown, Nav } from "react-bootstrap";
 import classes from './css-modules/Navpccss.module.css';
 import logopc from './../pictures/drupal-coder.svg'
 
