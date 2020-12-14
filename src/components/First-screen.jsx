@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, Dropdown, Row, Col, Container } from "react-bootstrap";
+import {Row, Col, Container } from "react-bootstrap";
 import classes from './css-modules/First-screen.module.css';
 import golden_finger from './../pictures/cup.png';
 import Nav from './Navpc.jsx';
@@ -11,11 +11,11 @@ const First_screen = () => {
     <div>
       <div className={classes.fixwidth}>
             <div className={classes.overlay}>
-              <video loop="loop" playsinline autoplay="" muted="">
+              <video loop="loop" playsInline={true} autoPlay={true} muted={true}>
                 <source src={video} type="video/mp4" />
               </video>
             </div>
-            <div className={classes.background}><img src={drupal}/></div>
+            <div className={classes.background}><img src={drupal} alt=""/></div>
           </div>
       <Container fluid="true" className={classes.main_screen}>
         <Container className={classes.first_screen_wrapper}>
@@ -33,7 +33,7 @@ const First_screen = () => {
                 <br /> на CMS Drupal любых версий и запущенности
               </div>
               <div className={classes.button_section}>
-                <a href="" className={classes.btn_tariff}>Тарифы</a>
+                <a href="/sas" className={classes.btn_tariff}>Тарифы</a>
               </div>
             </Col>
             {/*6 иконок на главной*/}
