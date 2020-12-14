@@ -14,8 +14,9 @@ pages:
   only:
   - master
   artifacts:
-    CI: true
     paths:
     - /log.txt
     when: on_failure
     expire_in: 1 day
+  variables: 
+    CI: true
