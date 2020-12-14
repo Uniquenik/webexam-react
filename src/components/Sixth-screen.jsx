@@ -13,7 +13,7 @@ const Sixth_screen = () => {
       <Container>
         <h2 className={classes.title}>Наши профессиональные разработчики выполняют быстро любые задачи</h2>
         <Row>
-          <Col sm="4" xs="12" className={classes.component_wrapper} xs={{span: 8, offset: 2}} sm={{span: 4, offset: 0}}>
+          <Col className={classes.component_wrapper} xs={{span: 8, offset: 2}} sm={{span: 4, offset: 0}}>
             <div className={classes.icons_wrapper}>
               <img alt="" src={drupal} className={classes.back_icon}/>
               <img alt ="" src={icon_1} className={classes.front_icon}/>
@@ -23,7 +23,7 @@ const Sixth_screen = () => {
               Настройка события GA в интернет-магазине
             </div>
           </Col>
-          <Col sm="4" xs="12" className={classes.component_wrapper} xs={{span: 8, offset: 2}} sm={{span: 4, offset: 0}}>
+          <Col className={classes.component_wrapper} xs={{span: 8, offset: 2}} sm={{span: 4, offset: 0}}>
             <div className={classes.icons_wrapper}>
               <img alt="" src={drupal} className={classes.back_icon}/>
               <img alt ="" src={icon_2} className={classes.front_icon}/>
@@ -33,7 +33,7 @@ const Sixth_screen = () => {
               Разработка мобильной версии сайта
             </div>
           </Col>
-          <Col sm="4" xs="12" className={classes.component_wrapper} xs={{span: 8, offset: 2}} sm={{span: 4, offset: 0}}>
+          <Col className={classes.component_wrapper} xs={{span: 8, offset: 2}} sm={{span: 4, offset: 0}}>
             <div className={classes.icons_wrapper}>
               <img alt="" src={drupal} className={classes.back_icon}/>
               <img alt ="" src={icon_3} className={classes.front_icon}/>

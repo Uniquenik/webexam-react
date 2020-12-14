@@ -9,7 +9,6 @@ import support5 from './../pictures/support5.svg';
 import support6 from './../pictures/support6.svg';
 import support7 from './../pictures/support7.svg';
 import support8 from './../pictures/support8.svg';
-import Fourth_screen from './Fourth-screen.jsx';
 
 const Third_screen = () => {
   return (

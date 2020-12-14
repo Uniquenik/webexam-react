@@ -11,7 +11,7 @@ const Fourth_screen = () => {
       <Container fluid="true"  className={classes.fourth_screen} >
         <Container className={classes.fourth_screen_wrapper}>
           <Row>
-            <Col xs="12" lg="6" lg={{span: 6, offset: 6}}>
+            <Col xs="12" lg={{span: 6, offset: 6}}>
               <h2 className={classes.title}>Экспертиза в Drupal, опыт 14 лет!</h2>
               <Container className={classes.components_wrapper}>
                 <Row>
