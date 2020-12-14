@@ -1,0 +1,172 @@
+.h2 {
+    padding-top: 40px;
+    margin-bottom: 46px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.image {
+    width: 14vw;
+    height: auto;
+}
+.image2 {
+    width: 14vw;
+    padding-top: 0%;
+    margin-left: 1vw;
+    height: auto;
+}
+
+.mobilelen{
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+}
+.maincontainer {
+    font-family: 'Montserrat', sans-serif !important;
+    font-style: normal;
+    margin-bottom: 110px;
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: transparent;
+}
+.back{
+    margin-top: 90px;
+}
+.back:after {
+    content: ''; /* Вывод тени */
+    position: absolute; /* Абсолютное позиционирование */
+    top: -25px; /* Положение снизу */
+    left: 64px; /* Положение слева */
+    right: 64px;
+    bottom:0px;
+    opacity: 0.5;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 60px rgba(162,162,162,.25);
+    z-index: -1; /* Опускаем ниже блока */
+   }
+
+.back::before {
+    content: ''; /* Вывод тени */
+    position: absolute; /* Абсолютное позиционирование */
+    top: -50px; /* Положение снизу */
+    left: 128px; /* Положение слева */
+    right: 128px;
+    bottom:0px ;
+    opacity: 0.5;
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    box-shadow: 0 4px 60px rgba(162,162,162,.25);
+    z-index: -1; /* Опускаем ниже блока */
+   }
+
+.brackets {
+    position: absolute;
+    width: 30vw;
+    height: min-content;
+    left: -5%;
+    top: 0%;
+    z-index: -3;
+    opacity: 0.05;
+}
+
+
+.slickbuttoncontainer {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-top:20px;
+    padding-bottom: 20px;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0 4px 60px rgba(162,162,162,.25);
+    border-radius: 5px;
+}
+.slickcontainer {
+    padding-left:15px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+}
+
+.slide{
+    display: inline-block;
+    height: auto;
+}
+
+.picture {
+    padding-bottom: 40px;
+}
+.text {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #050c33;
+    padding-bottom: 15px;
+}
+.sign {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    color: #838b9c;
+    padding-bottom: 15px;
+}
+.buttonsblock {
+    text-align: center;
+    border-top: 1px solid rgba(0,0,0,.1);
+    padding-top:20px;
+    padding-bottom: 20px;
+    padding-left:15px;
+    padding-right: 15px;
+}
+.buttons button{
+    text-decoration: none;
+    color: black;
+}
+.buttons button:hover{
+    color: black;
+    text-decoration: none;
+}
+.buttons {
+    display: inline-flex;
+}
+.pages{
+    margin-left: 45px;
+    margin-right: 45px;
+    font-size: 28px;
+    display: inline-flex;
+}
+.pagesn{
+    color: #e0e0e0;
+}
+.back {
+    padding-left: 0%;
+    padding-right: 0%;
+    background-color: white;
+}
+@media (min-width: 992px) {
+    .slickbuttoncontainer {
+        display: inline-flex;
+        padding-left: 70px;
+        padding-top:65px;
+        padding-bottom: 65px;
+    }
+    .center {
+        height: 45%;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+    .buttonsblock {
+        padding-top: 0px;
+        height: 60%;
+        border-top: none;
+        border-left: 1px solid rgba(0,0,0,.1);
+    }
+    .h2 {
+        font-size: 42px;
+    }
+}
+
+
+@media (min-width: 720px) {
+    .mobilelen {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

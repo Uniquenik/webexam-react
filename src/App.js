@@ -1,19 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navmobile from './components/Navmobile.jsx';
-import First_screen from './components/First-screen.jsx';
-import Second_screen from './components/Second-screen.jsx';
-import Third_screen from './components/Third-screen.jsx';
-
+import FirstScreen from './components/First-screen.jsx';
+import SecondScreen from './components/Second-screen.jsx';
+import ThirdScreen from './components/Third-screen.jsx';
+import FourthScreen from './components/Fourth-screen.jsx';
+import FiveScreen from './components/Five-screen.jsx';
+import SixthScreen from './components/Sixth-screen.jsx';
+import SeventhScreen from './components/Seventh-screen.jsx';
+import NineScreen from './components/Nine-screen.jsx';
+import TenScreen from './components/Ten-screen.jsx';
+import ElevenScreen from './components/Eleven-screen.jsx';
+import TwelveScreen from './components/Twelve-screen.jsx';
 
 function App() {
   return (
     <div>
         <Navmobile />
-        <First_screen />
-        <Second_screen />
-        <Third_screen />
+        <FirstScreen />
+        <SecondScreen />
+        <ThirdScreen />
+        <FourthScreen />
+        <FiveScreen />
+
+
+        <SixthScreen />
+        <SeventhScreen />
+        <NineScreen />
+        <TenScreen />
+        <ElevenScreen/>
+        <TwelveScreen/>
+
     </div>
   );
 }

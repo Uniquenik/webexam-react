@@ -10,16 +10,13 @@ import support6 from './../pictures/support6.svg';
 import support7 from './../pictures/support7.svg';
 import support8 from './../pictures/support8.svg';
 
-
-
-
 const Third_screen = () => {
   return (
     <Container fluid="true" className={classes.third_screen}>
-      <Container className={classes.third_screen_wrapper}>
-        <h2 className={classes.title} style={{paddingBottom: '50px'}}>Поддержка <br /> от Drupal-coder</h2>
-        <Row className={classes.cards_wrapper} style={{padding: '17px'}}>
-          <Col lg="3" sm="6" xs="12">
+      <Container className={classes.third_screen_wrapper} >
+        <h2 className={classes.title}>Поддержка <br /> от Drupal-coder</h2>
+        <Row className={classes.cards_wrapper}>
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>01.</Card.Text>
@@ -32,7 +29,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>02.</Card.Text>
@@ -45,7 +42,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>03.</Card.Text>
@@ -58,7 +55,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>04.</Card.Text>
@@ -71,7 +68,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>05.</Card.Text>
@@ -84,7 +81,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>06.</Card.Text>
@@ -97,7 +94,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>07.</Card.Text>
@@ -109,7 +106,7 @@ const Third_screen = () => {
               </Card.Body>
             </Card>
           </Col>
-          <Col lg="3" sm="6" xs="12">
+          <Col lg="3" sm="6" xs="12" className={classes.card_wrapper}>
             <Card className={classes.card}>
               <Card.Body>
                 <Card.Text className={classes.card_number}>08.</Card.Text>

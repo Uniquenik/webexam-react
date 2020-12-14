@@ -1,0 +1,60 @@
+.screen {
+  font-family: 'Montserrat', sans-serif !important;
+  font-style: normal;
+  background: white;
+  padding-top: 100px;
+}
+
+.title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #050c33;
+  padding-bottom: 30px;
+}
+
+.component_wrapper{
+  width: 100px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+.icon_title {
+  font-size: 25px;
+  font-weight: bold;
+  color: #050c33;
+}
+
+.icon_description{
+  text-align: left;
+  color: #4f5a73;
+  font-weight: 500;
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.back_icon {
+  position: absolute;
+  margin-left: -75px;
+  width: 150px;
+  height: 120px;
+  opacity: 0.08;
+}
+
+.front_icon {
+  position: relative;
+}
+@media (min-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+  .component_wrapper{
+    text-align: left;
+  }
+
+}
+
+@media (min-width: 1400px) {
+  .icon_description{
+    padding-right: 150px;
+  }
+}

@@ -1,7 +1,5 @@
 html{
   margin: 0;
-  width: 100%;
-  overflow-x: hidden;
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%
 }
@@ -18,4 +16,9 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.slick-track{
+  display: block;
+  height: max-content;
 }

@@ -1,17 +1,16 @@
 import React from 'react';
-import { Navbar, NavDropdown, Row, Col, Container, Dropdown, Nav } from "react-bootstrap";
+import { Navbar, Row, Col, Dropdown, Nav } from "react-bootstrap";
 import classes from './css-modules/Navpccss.module.css';
 import logopc from './../pictures/drupal-coder.svg'
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
-        href=""
+        href="/sas"
         ref={ref}
         onClick={(e) => {
             e.preventDefault();
             onClick(e);
-        }}
-    >
+        }}>
         {children}
       &#x25bc;
     </a>
@@ -23,10 +22,9 @@ const Navpc = () => {
         <Navbar className={classes.navbarpc} collapseOnSelect expand="md">
             <Row>
                 <Col xs="2">
-                    <Navbar.Brand href="#home"> <img className={classes.icon} src={logopc} /></Navbar.Brand>
+                    <Navbar.Brand href="#home"> <img className={classes.icon} src={logopc} alt="" /></Navbar.Brand>
                 </Col>
                 <Col lg="12" xl="10">
-
                     <div className={classes.navbar}>
                         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                         <Navbar.Collapse id="responsive-navbar-nav">
@@ -37,9 +35,9 @@ const Navpc = () => {
                                             <a href="#features"> Поддержка Drupal</a>
                                         </div>
                                         </li>
-                                        <li><Dropdown className={classes.dropdown}>
+                                        <li><Dropdown className={classes.dropdown} >
                                             <div className={classes.downchoice}>
-                                                <Dropdown.Toggle as={CustomToggle} classItem={classes.toggle} id="dropdown-custom-components">
+                                                <Dropdown.Toggle as={CustomToggle} classItem={classes.toggle} id="dropdown-custom-components" >
                                                     Администрирование
                                                 </Dropdown.Toggle>
                                             </div>
