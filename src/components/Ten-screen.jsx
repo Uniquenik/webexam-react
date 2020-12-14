@@ -58,32 +58,32 @@ export default class Ten_screen extends Component {
                             <Slider {...settings} className={classes.st}>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo0} className={classes.img} />
+                                        <img src={logo0} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo1} className={classes.img} />
+                                        <img src={logo1} className={classes.img} alt="" />
                                     </div>
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo2} className={classes.img} />
+                                        <img src={logo2} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo3} className={classes.img} />
+                                        <img src={logo3} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo1} className={classes.img} />
+                                        <img src={logo1} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo2} className={classes.img} />
+                                        <img src={logo2} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                             </Slider>
@@ -92,32 +92,32 @@ export default class Ten_screen extends Component {
                                 <Slider {...settings}>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo0} className={classes.img} />
+                                            <img src={logo0} className={classes.img} alt="" />
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo1} className={classes.img} />
+                                            <img src={logo1} className={classes.img} alt="" />
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo2} className={classes.img} />
+                                            <img src={logo2} className={classes.img} alt="" />
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo3} className={classes.img} />
+                                            <img src={logo3} className={classes.img} alt=""/>
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo1} className={classes.img} />
+                                            <img src={logo1} className={classes.img} alt=""/>
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo2} className={classes.img} />
+                                        <img src={logo2} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 </Slider>

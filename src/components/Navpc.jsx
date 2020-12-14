@@ -5,13 +5,12 @@ import logopc from './../pictures/drupal-coder.svg'
 
 const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
-        href=""
+        href="/sas"
         ref={ref}
         onClick={(e) => {
             e.preventDefault();
             onClick(e);
-        }}
-    >
+        }}>
         {children}
       &#x25bc;
     </a>
@@ -23,7 +22,7 @@ const Navpc = () => {
         <Navbar className={classes.navbarpc} collapseOnSelect expand="md">
             <Row>
                 <Col xs="2">
-                    <Navbar.Brand href="#home"> <img className={classes.icon} src={logopc} /></Navbar.Brand>
+                    <Navbar.Brand href="#home"> <img className={classes.icon} src={logopc} alt="" /></Navbar.Brand>
                 </Col>
                 <Col lg="12" xl="10">
                     <div className={classes.navbar}>
