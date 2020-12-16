@@ -1,14 +1,14 @@
 import React from 'react';
 import {Row, Col, Container, Card} from "react-bootstrap";
 import classes from './css-modules/Five-screen.module.css';
+import drupal from './../pictures/drupal-back.svg';
 
 const Five_screen = () => {
-  return (<Container fluid="true" className={classes.screen}>
-    {/*<div className={classes.icon}>
-        <img alt="" src={icon} />
-      </div>*/
-    }
-    <div className={classes.background}></div>
+  return (
+  <Container fluid="true" className={classes.screen}>
+    <div className={classes.back}>
+      <img alt="" src={drupal} />
+    </div>
     <Container>
       <h1 id="tarif" className={classes.title}>Тарифы</h1>
       <Row>
@@ -76,7 +76,8 @@ const Five_screen = () => {
         <span>Получить индивидульный тариф</span>
       </div>
     </Container>
-  </Container>)
+  </Container>
+)
 }
 
 export default Five_screen;
