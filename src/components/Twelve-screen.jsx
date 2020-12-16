@@ -13,7 +13,6 @@ const Twelve_screen = () => {
 
         <Container fluid className={classes.maincontainer}>
             <div className={classes.ddiv}><img className={classes.dimg} src={dfly} alt="" /></div>
-            <div className={classes.ddivd}><img className={classes.dimg} src={D} alt="" /></div>
             <Container className={classes.cont}>
                 <Row>
                     <Col xs="12" lg="5">
@@ -23,7 +22,7 @@ const Twelve_screen = () => {
                             </div>
                         </div>
                         <div className={classes.address}>
-                            <div className={classes.contacts}><img src={phone} className={classes.contactsimg} alt="" />8 800 222-26-73</div>
+                            <div className={classes.contacts}><img src={phone} className={classes.contactsimgphone} alt="" />8 800 222-26-73</div>
                             <div className={classes.contactsmail}><img src={mail} className={classes.contactsimg} alt="" />info@drupal-coder.ru</div>
                         </div>
                     </Col>
@@ -58,16 +57,13 @@ const Twelve_screen = () => {
                 </Row>
             </Container>
             <Container fluid className={classes.footer}>
+            <div className={classes.ddivd}><img className={classes.dimg} src={D} alt="" /></div>
                 <Container>
                 <div className={classes.firstend}>Проект ООО "Инитлаб", Краснодар, Россия</div>
                 <div className={classes.secondend}>Drupal является зарегистрированной торговой маркой Dries Buytaert</div>
                 </Container>
             </Container>
         </Container>
-
-
-
-
     )
 
 
