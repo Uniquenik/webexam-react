@@ -54,8 +54,8 @@ export default class Form extends React.Component {
         alert("Error");
       });
 
-    e.preventDefault();
     }
+    e.preventDefault();
   }
 
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
@@ -80,6 +80,7 @@ export default class Form extends React.Component {
             render="explicit"
             onloadCallback={this.onloadCallback}
             verifyCallback={this.verify}
+            theme="dark"
           />,
           <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
