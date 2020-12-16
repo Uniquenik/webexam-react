@@ -1,12 +1,46 @@
+
 html{
   margin: 0;
   -ms-text-size-adjust:100%;
   -webkit-text-size-adjust:100%
 }
 
+/** Montserrat Light **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-style: normal;
+    src: url("./fonts/webfonts/Montserrat-Light.woff2") format("woff2"),
+         url("./fonts/webfonts/Montserrat-Light.woff") format("woff");
+}
+/** Montserrat Medium **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 500;
+    font-style: normal;
+    src: url("./fonts/webfonts/Montserrat-Medium.woff2") format("woff2"),
+         url("./fonts/webfonts/Montserrat-Medium.woff") format("woff");
+}
+/** Montserrat SemiBold **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+    src: url("./fonts/webfonts/Montserrat-SemiBold.woff2") format("woff2"),
+         url("./fonts/webfonts/Montserrat-SemiBold.woff") format("woff");
+}
+/** Montserrat Bold **/
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+    src: url("./fonts/webfonts/Montserrat-Bold.woff2") format("woff2"),
+         url("./fonts/webfonts/Montserrat-Bold.woff") format("woff");
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;

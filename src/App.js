@@ -8,6 +8,7 @@ import FourthScreen from './components/Fourth-screen.jsx';
 import FiveScreen from './components/Five-screen.jsx';
 import SixthScreen from './components/Sixth-screen.jsx';
 import SeventhScreen from './components/Seventh-screen.jsx';
+import EightScreen from './components/mosaic-eight.jsx';
 import NineScreen from './components/Nine-screen.jsx';
 import TenScreen from './components/Ten-screen.jsx';
 import ElevenScreen from './components/Eleven-screen.jsx';
@@ -22,10 +23,9 @@ function App() {
         <ThirdScreen />
         <FourthScreen />
         <FiveScreen />
-
-
         <SixthScreen />
         <SeventhScreen />
+        <EightScreen />
         <NineScreen />
         <TenScreen />
         <ElevenScreen/>

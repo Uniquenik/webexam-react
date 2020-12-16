@@ -54,6 +54,10 @@
   text-align: center;
 }
 
+.btn:focus {
+  outline: none;
+}
+
 
 .btn_wrapper {
   text-align: center;

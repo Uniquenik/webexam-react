@@ -30,10 +30,12 @@
 
 .card {
   min-height: 300px;
-  height: 100%;
+  max-height: 320px;
+  height:100%;
   box-shadow: 20px 20px 40px rgba(5,12,51,.05);
   border: none;
 }
+
 
 .card_number {
   font-size: 12px;
@@ -60,11 +62,15 @@
   z-index: 5;
 }
 
+@media screen and (max-device-width: 769px) {
+  .card {
+    max-height: 255px;
+    min-height: 210px;
+  }
+}
+
 
 @media screen and (max-device-width: 767px) {
-  .card {
-    min-height: 200px;
-  }
   .title {
     font-size: 25px;
     padding-bottom: 20px;
