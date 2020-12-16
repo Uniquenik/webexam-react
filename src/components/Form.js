@@ -15,24 +15,15 @@ export default class Form extends React.Component {
     this.verify = this.verify.bind(this); 
     this.onloadCallback=this.onloadCallback.bind(this);
   }
-  componentDidMount() {
-    this.setState({ isMounted: true });
-}
-
-componentWillUnmount(){
-    this.setState({ isMounted: false });
-}
 
   onloadCallback () {
     console.log("captcha works");
   }
   verify(response){
-    if (this.state.isMounted) {
     if (response){
-      this.setState({ name: "", phone: "", email: "", message: "", 
+      this.setState({
         isVerified: true
       })
-    }
   }
   }
 
