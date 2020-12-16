@@ -6,19 +6,33 @@
   padding-bottom:70px;
 }
 
+.title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+  color: #050c33;
+  padding-bottom: 30px;
+}
+
 .icon {
   width: 100%;
   height: auto;
+  border-radius: 5px;
+}
+
+.wrapper {
+  min-height: 240px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .text_wrapper {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
-  padding-bottom: 30px;
 }
 
-.component_title {
+.component_title  {
   color: #050C33;
   font-weight: bold;
   font-size: 18px;
@@ -42,12 +56,81 @@
   padding-top: 15px
 }
 
-
 .second_component {
-  background: url('../../pictures/mosaic_2.svg');
+  background: url('../../pictures/mosaic_2.svg') no-repeat center;
+  background-size: cover;
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-size: cover;
   position: relative;
+  border-radius: 5px;
+  position: relative;
+}
+
+.second_component:before,
+.third_component:before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(360deg,rgba(0,0,0,.5) 0,rgba(0,0,0,0) 55.58%);
+    z-index: 5;
+    border-radius: 5px;
+}
+
+.second_title_wrapper,
+.second_title_wrapper_special {
+    margin-top: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.second_title_wrapper h3 ,
+.second_title_wrapper_special h3{
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: white;
+}
+.second_title_wrapper h6 {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: lightgray;
+}
+
+.third_component {
+  background: url('../../pictures/mosaic_3.svg') no-repeat bottom;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  position: relative;
+}
+
+.fourth_component {
+  background: url('../../pictures/mosaic_4.svg') no-repeat bottom;
+  background-size: cover;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 5px;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .second_title_wrapper_special h3 {
+    margin-bottom: 50px;
+    max-width: 300px;
+  }
+  .title {
+    font-size: 40px;
+    padding-bottom: 50px;
+  }
+
 }
