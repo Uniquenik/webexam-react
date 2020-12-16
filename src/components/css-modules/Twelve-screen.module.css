@@ -1,9 +1,14 @@
 .maincontainer {
+    padding-left: 0%;
+    padding-right: 0%;
     background: linear-gradient(to right, black, #050c33);
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     position: relative;
+}
+.address {
+    padding-bottom: 30px;
 }
 .contacts {
     color:white;
@@ -29,6 +34,15 @@
     top: 0%;
     z-index: 0;
 }
+.ddivd{
+    position: absolute;
+    width: 30vw;
+    height: min-content;
+    right: 0%;
+    bottom: 40px;
+    z-index: 0;
+    overflow-x: hidden;
+}
 .dimg {
     width: 35vw;
     height: auto;
@@ -47,6 +61,14 @@
     color:lightgray;
     padding-bottom: 20px;
 }
+.terms {
+    color:#F14D34;
+}
+.forms {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 80px;
+}
 .formback {
     background-color: transparent;
     border:1px solid;
@@ -55,6 +77,18 @@
     background-color: transparent;
 }
 
+.footer {
+    border-top: 1px solid rgba(255,255,255,0.3);
+    height: 190px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+
+}
+
+.firstend {
+    padding-top: 55px;
+}
 
 @media (min-width: 992px) {
     .h2 {
@@ -67,5 +101,19 @@
     .ddiv {
         left:37%;
     }
+    .address {
+        padding-top: 95px;
     }
+    }
+@media (min-width:768px){
+    .footer {
+        height: 150px;
+    }
+}    
+
+@media (min-width:1200px){
+    .address {
+        padding-top:155px;
+    }
+}
   
