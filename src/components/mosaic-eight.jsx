@@ -2,7 +2,6 @@ import React from 'react';
 import { Row, Col, Container } from "react-bootstrap";
 import classes from './css-modules/mosaic-eight.module.css';
 import icon1 from './../pictures/mosaic_1.svg';
-import icon2 from './../pictures/mosaic_2.svg';
 
 const Eight_screen = () => {
   return (
