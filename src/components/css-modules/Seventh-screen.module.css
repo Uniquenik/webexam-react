@@ -2,8 +2,8 @@
   font-family: 'Montserrat', sans-serif !important;
   font-style: normal;
   background: white;
-  padding-top: 100px;
-  padding-bottom:70px;
+  padding-top: 30px;
+  padding-bottom:50px;
 }
 
 .title {
@@ -61,7 +61,8 @@
 
 .btn_wrapper {
   text-align: center;
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 1024px){
