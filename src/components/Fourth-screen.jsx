@@ -28,7 +28,7 @@ const Fourth_screen = () => {
                 <Col xs="12" sm="6" className={classes.component_wrapper}>
                   <div className={classes.component}>
                     Учавствуем в разработке ядра Drupal и модулей на Drupal.org, разрабатываем
-                    <span className={classes.color_text}>свои модули на Drupal</span>
+                    <span className={classes.color_text}> свои модули на Drupal</span>
                   </div>
                 </Col>
                 <Col xs="12" sm="6" className={classes.component_wrapper}>
