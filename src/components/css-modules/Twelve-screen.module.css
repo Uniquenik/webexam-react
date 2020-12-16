@@ -1,15 +1,21 @@
 .maincontainer {
+    padding-left: 0%;
+    padding-right: 0%;
     background: linear-gradient(to right, black, #050c33);
     padding-top: 50px;
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     position: relative;
 }
+.address {
+    padding-bottom: 30px;
+}
 .contacts {
     color:white;
     line-height: 1.35;
     font-size: 32px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 .contactsmail {
     color:white;
@@ -21,16 +27,31 @@
     color:lightgray;
     padding-right: 15px;
 }
+
+.contactsimgphone{
+    color:lightgray;
+    padding-right: 15px;
+    padding-bottom: 5px;
+}
 .ddiv {
     position: absolute;
     width: 30vw;
-    height: min-content;
+    height: max-content;
     left: 30%;
     top: 0%;
     z-index: 0;
 }
+.ddivd{
+    position: absolute;
+    width: 30vw;
+    height: max-content;
+    right: 0%;
+    bottom: 0%;
+    z-index: 0;
+    overflow-x: hidden;
+}
 .dimg {
-    width: 35vw;
+    width: 30vw;
     height: auto;
 }
 .h2 {
@@ -47,12 +68,34 @@
     color:lightgray;
     padding-bottom: 20px;
 }
+.terms {
+    color:#F14D34;
+}
+.forms {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 50px;
+}
 .formback {
     background-color: transparent;
     border:1px solid;
 }
 .formback:focus{
     background-color: transparent;
+}
+
+.footer {
+    position: relative;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    height: 190px;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(255,255,255,0.5);
+
+}
+
+.firstend {
+    padding-top: 55px;
 }
 
 
@@ -64,8 +107,28 @@
     .dimg {
         width: 22vw;
     }
+    .ddivd {
+        width: 22vw;
+    }
     .ddiv {
         left:37%;
     }
+    .address {
+        padding-top: 95px;
     }
+    .forms {
+        padding-bottom:80px;
+    }
+    }
+@media (min-width:768px){
+    .footer {
+        height: 150px;
+    }
+}    
+
+@media (min-width:1200px){
+    .address {
+        padding-top:155px;
+    }
+}
   

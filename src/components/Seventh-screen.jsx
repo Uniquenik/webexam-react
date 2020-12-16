@@ -12,7 +12,7 @@ const Seventh_screen = () => {
   return (
     <Container fluid="true" className={classes.screen}>
       <Container>
-        <h2 className={classes.title}>Команда</h2>
+        <h2 className={classes.title} id="team">Команда</h2>
         <Row>
           <Col md="4" xs="6" sm="6" className={classes.component_wrapper} >
             <img alt="" src={icon_1} className={classes.icon}/>
@@ -22,14 +22,14 @@ const Seventh_screen = () => {
             </div>
           </Col>
           <Col md="4" xs="6" sm="6" className={classes.component_wrapper}>
-            <img alt="" src={icon_2} className={classes.icon}/>
+            <img alt="" src={icon_4} className={classes.icon}/>
             <h3 className={classes.component_title}>Роман Агабеков</h3>
             <div className={classes.component_description}>
               Руководитель отдела DevOPS, директор
             </div>
           </Col>
           <Col md="4" xs="6" sm="6" className={classes.component_wrapper}>
-            <img alt="" src={icon_4} className={classes.icon}/>
+            <img alt="" src={icon_2} className={classes.icon}/>
             <h3 className={classes.component_title}>Алексей Синица</h3>
             <div className={classes.component_description}>
               Руководитель отдела поддержки сайтов
@@ -52,7 +52,7 @@ const Seventh_screen = () => {
           </Col>
         </Row>
         <div className={classes.btn_wrapper}>
-          <Button variant="outline-dark" className={classes.btn}>Вся команда</Button>
+          <Button variant="outline-dark" className={classes.btn} href="#team">Вся команда</Button>
         </div>
       </Container>
     </Container>
