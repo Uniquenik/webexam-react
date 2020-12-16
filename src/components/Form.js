@@ -1,17 +1,36 @@
 import React from "react";
+import Recaptcha from 'react-recaptcha';
 import axios from "axios"; // For making client request.
 import { Container, Button } from "react-bootstrap";
 import classes from './css-modules/Form.module.css';
 import './css-modules/FormCustom.css';
 
 
-class Form extends React.Component {
+export default class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", phone: "", email: "", message: "" };
+    this.state = { name: "", phone: "", email: "", message: "", 
+    isVerified: false 
+  }
+    this.verify = this.verify.bind(this); 
+    this.onloadCallback=this.onloadCallback.bind(this);
+  }
+
+  onloadCallback () {
+    console.log("captcha works");
+  }
+  verify(response){
+    if (response){
+      this.setState({
+        isVerified: true
+      })
+  }
   }
 
   handleForm = e => {
+    if (!this.state.isVerified) {
+      alert("Verify plz");
+    }
     axios.post(
       "https://formcarry.com/s/xCex2Sf1WL",
       this.state,
@@ -21,7 +40,7 @@ class Form extends React.Component {
 
         // access response.data in order to check formcarry response
         if (response.data.success) {
-          //alert ("Thats okey");
+
         } else {
           // handle error
           alert("Thats okey");
@@ -51,14 +70,18 @@ class Form extends React.Component {
 
           <textarea className={classes.forminputtext} name="message" id="message" placeholder="Ваш комментарий" onChange={this.handleFields}></textarea>
           <div className="checkbox">
-            <input className="custom-checkbox" type="checkbox" id="check" name="check" />
-            <label for="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span> </div></label>
+            <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
+            <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span> </div></label>
           </div>
-          <Button className={classes.submitbtn} type="submit">Send</Button>
+          <Recaptcha
+            sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
+            render="explicit"
+            onloadCallback={this.onloadCallback}
+            verifyCallback={this.verify}
+          />,
+          <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
       </Container>
     );
   }
 }
-
-export default Form;

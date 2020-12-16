@@ -1,8 +1,6 @@
 import React from 'react';
 import {Row, Col, Container, Card} from "react-bootstrap";
 import classes from './css-modules/Five-screen.module.css';
-{/* import icon from './../pictures/drupal-back.svg' */
-}
 
 const Five_screen = () => {
   return (<Container fluid="true" className={classes.screen}>

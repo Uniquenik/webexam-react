@@ -4,7 +4,6 @@ import classes from './css-modules/mosaic-eight.module.css';
 import icon1 from './../pictures/mosaic_1.svg';
 import icon5 from './../pictures/mosaic_5.svg';
 
-
 const Eight_screen = () => {
   return (
     <Container fluid="true" className={classes.screen}>

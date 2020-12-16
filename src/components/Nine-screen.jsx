@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import classes from './css-modules/Nine-screen.module.css';
 import pic1 from './../pictures/lpcma_rus_v4.jpg';
 import bracket from './../pictures/brackets.svg';
+import arrowl from './../pictures/arrow-left.svg';
 
 export default class Nine_screen extends Component {
     state = {
@@ -94,7 +95,7 @@ export default class Nine_screen extends Component {
                                         <div className={classes.buttonsblock}>
                                             <div className={classes.buttons}>
                                                 <div>
-                                                    <Button variant="link" onClick={this.previous}>l</Button>
+                                                    <Button variant="link" onClick={this.previous}><img src={arrowl}/> </Button>
                                                 </div>
                                                 <div className={classes.pages}>
                                                     0{this.state.activeSlide + 1} <div className={classes.pagesn}>/08 </div>
