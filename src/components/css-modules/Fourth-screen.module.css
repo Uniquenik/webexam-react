@@ -87,3 +87,30 @@
     padding-bottom: 50px;
   }
 }
+
+.fixwidth {
+  position: relative;
+  z-index: 2;
+}
+
+.background img {
+  max-width: 100%;
+}
+.background{
+  position: absolute;
+  right: -50%;
+  bottom: -50%;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+@media (min-width:768px){
+  .background{
+    right: -45%;
+    bottom:-60%;
+  }
+}

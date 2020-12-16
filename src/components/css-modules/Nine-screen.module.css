@@ -128,8 +128,9 @@
     display: inline-flex;
 }
 .pages{
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-top: 3px;
+    margin-left: 25px;
+    margin-right: 25px;
     font-size: 28px;
     display: inline-flex;
 }

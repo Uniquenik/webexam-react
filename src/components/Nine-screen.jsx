@@ -7,6 +7,7 @@ import classes from './css-modules/Nine-screen.module.css';
 import pic1 from './../pictures/lpcma_rus_v4.jpg';
 import bracket from './../pictures/brackets.svg';
 import arrowl from './../pictures/arrow-left.svg';
+import arrowr from './../pictures/arrow-right.svg';
 
 export default class Nine_screen extends Component {
     state = {
@@ -101,7 +102,7 @@ export default class Nine_screen extends Component {
                                                     0{this.state.activeSlide + 1} <div className={classes.pagesn}>/08 </div>
                                                 </div>
                                                 <div>
-                                                    <Button variant="link" onClick={this.next}>r</Button>
+                                                    <Button variant="link" onClick={this.next}><img src={arrowr}/></Button>
                                                 </div>
                                             </div>
                                         </div>

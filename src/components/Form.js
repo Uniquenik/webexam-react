@@ -31,6 +31,7 @@ export default class Form extends React.Component {
     if (!this.state.isVerified) {
       alert("Verify plz");
     }
+    else {
     axios.post(
       "https://formcarry.com/s/xCex2Sf1WL",
       this.state,
@@ -54,6 +55,7 @@ export default class Form extends React.Component {
       });
 
     e.preventDefault();
+    }
   }
 
   handleFields = e => this.setState({ [e.target.name]: e.target.value });
