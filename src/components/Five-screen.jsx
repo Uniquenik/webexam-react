@@ -2,6 +2,7 @@ import React from 'react';
 import {Row, Col, Container, Card} from "react-bootstrap";
 import classes from './css-modules/Five-screen.module.css';
 import drupal from './../pictures/drupal-back.svg';
+import {Link} from 'react-router-dom';
 
 const Five_screen = () => {
   return (
@@ -26,7 +27,7 @@ const Five_screen = () => {
               </div>
             </Card.Body>
             <div className={classes.btn_wrapper}>
-              <a href="#tarif" className={classes.butt}>Свяжитесь с нами!</a>
+            <Link to='/form' className={classes.butt}>Свяжитесь с нами!</Link>
             </div>
           </Card>
         </Col>
@@ -45,7 +46,7 @@ const Five_screen = () => {
               </div>
             </Card.Body>
             <div className={classes.btn_wrapper}>
-              <a href="#tarif" className={classes.butt_main}>Свяжитесь с нами!</a>
+              <Link to='/form' className={classes.butt_main}>Свяжитесь с нами!</Link>
             </div>
           </Card>
         </Col>
@@ -64,7 +65,7 @@ const Five_screen = () => {
               </div>
             </Card.Body>
             <div className={classes.btn_wrapper}>
-              <a href="#tarif" className={classes.butt}>Свяжитесь с нами!</a>
+            <Link to='/form' className={classes.butt}>Свяжитесь с нами!</Link>
             </div>
           </Card>
         </Col>

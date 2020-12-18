@@ -32,6 +32,7 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
         onClick={(e) => {
             e.preventDefault();
             onClick(e);
+            this.setState({isOpen : false});
         }}
     >
         {children}
@@ -39,6 +40,8 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
          &#x25bc;
     </a>
 ));
+
+
     render() {
     return (
         <Navbar fluid="true" fixed="bottom" variant="dark" expand="lg" className={classes.navbarmobile}>
@@ -46,7 +49,7 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
                 <Nav className="mr-auto">
                     <div className={classes.menu}>
                         <ul>
-                            <li className={classes.dropmobile_item}><div >
+                            <li className={classes.dropmobile_item}><div>
                                 <a href="#features" className={classes.items}> Поддержка Drupal</a>
                             </div>
                             </li>
@@ -57,7 +60,7 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
                                     </Dropdown.Toggle>
                                 </div>
                                 <div className={classes.dropchoice}>
-                                    <Dropdown.Menu className={classes.dropdown_menu} show="true">
+                                    <Dropdown.Menu show className={classes.dropdown_menu} >
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/1.1">Миграция</Dropdown.Item>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/1.2">Бэкапы</Dropdown.Item>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/1.3">Аудит безопасности</Dropdown.Item>
@@ -109,7 +112,7 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
             </Navbar.Collapse>
             <Navbar.Brand href="#home"><img className={classes.icon} src={logomb} alt="" /></Navbar.Brand>
 
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
+            <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={this.onclick}/>
         </Navbar>
 
 

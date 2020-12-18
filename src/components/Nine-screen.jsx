@@ -96,13 +96,13 @@ export default class Nine_screen extends Component {
                                         <div className={classes.buttonsblock}>
                                             <div className={classes.buttons}>
                                                 <div>
-                                                    <Button variant="link" onClick={this.previous}><img src={arrowl}/> </Button>
+                                                    <Button variant="link" onClick={this.previous}><img src={arrowl} alt=''/> </Button>
                                                 </div>
                                                 <div className={classes.pages}>
                                                     0{this.state.activeSlide + 1} <div className={classes.pagesn}>/08 </div>
                                                 </div>
                                                 <div>
-                                                    <Button variant="link" onClick={this.next}><img src={arrowr}/></Button>
+                                                    <Button variant="link" onClick={this.next}><img src={arrowr} alt=''/></Button>
                                                 </div>
                                             </div>
                                         </div>
