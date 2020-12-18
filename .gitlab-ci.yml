@@ -9,6 +9,8 @@ pages:
   - npm run build
   - rm -rf public
   - mv build public
+  variables: 
+    CI: "true"
   artifacts:
     paths:
     - public

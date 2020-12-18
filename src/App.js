@@ -16,9 +16,6 @@ import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
 
 function App() {
-  {/*const [modalActive,setModalActive] = useState(true);
-    fff
-  */}
   return (
     <div>
       <React.StrictMode>
@@ -36,9 +33,6 @@ function App() {
         <TenScreen />
         <ElevenScreen/>
         <TwelveScreen/>
-        {/*<Modal active={modalActive} setActive={setModalActive}/> 
-        ff
-        */}
     </div>
   );
 }
