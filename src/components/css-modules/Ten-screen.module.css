@@ -38,7 +38,7 @@
 }
 .maincontainer {
     padding: 0px 0px;
-    padding-bottom: 150px;
+    padding-bottom: 50px;
 }
 .firstslick {
     padding: 0px 0px;
@@ -58,5 +58,9 @@
     width: 740px;
     margin-left: auto;
     margin-right: auto;
+}
+.maincontainer {
+  padding-bottom: 110px;
+
 }
 }

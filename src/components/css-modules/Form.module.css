@@ -9,9 +9,9 @@
     background-color: transparent;
     color: white;
     border: 1px solid rgba(255, 255, 255, .3);
+    padding-left:15px;
 }
 .forminput::placeholder { /* Most modern browsers support this now. */
-    padding-left:15px;
     color: white;
  }
 .forminputtext {
@@ -20,6 +20,7 @@
     margin-bottom: 10px;
     background-color: transparent;
     color: white;
+    padding-left:15px;
     border: 1px solid rgba(255, 255, 255, .3);
     resize: none;
 }
@@ -27,7 +28,6 @@
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
     padding-top: 15px;
-    padding-left:15px;
     color: white;
  }
 .submitbtn {

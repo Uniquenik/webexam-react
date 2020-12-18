@@ -31,6 +31,7 @@ export default class Form extends React.Component {
     if (!this.state.isVerified) {
       alert("Verify plz");
     }
+    else {
     axios.post(
       "https://formcarry.com/s/xCex2Sf1WL",
       this.state,
@@ -53,6 +54,7 @@ export default class Form extends React.Component {
         alert("Error");
       });
 
+    }
     e.preventDefault();
   }
 
@@ -78,6 +80,7 @@ export default class Form extends React.Component {
             render="explicit"
             onloadCallback={this.onloadCallback}
             verifyCallback={this.verify}
+            theme="dark"
           />,
           <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
