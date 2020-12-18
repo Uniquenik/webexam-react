@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navmobile from './components/Navmobile.jsx';
 import FirstScreen from './components/First-screen.jsx';
@@ -15,10 +16,14 @@ import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
 
 function App() {
-  {/*const [modalActive,setModalActive] = useState(true);*/}
+  {/*const [modalActive,setModalActive] = useState(true);
+    fff
+  */}
   return (
     <div>
+      <React.StrictMode>
         <Navmobile />
+        </React.StrictMode>
         <FirstScreen />
         <SecondScreen />
         <ThirdScreen />
@@ -31,7 +36,9 @@ function App() {
         <TenScreen />
         <ElevenScreen/>
         <TwelveScreen/>
-        {/*<Modal active={modalActive} setActive={setModalActive}/> */}
+        {/*<Modal active={modalActive} setActive={setModalActive}/> 
+        ff
+        */}
     </div>
   );
 }

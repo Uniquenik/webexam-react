@@ -3,25 +3,46 @@ import { Navbar, Dropdown, Nav } from "react-bootstrap";
 import classes from './css-modules/Navmobile.module.css';
 import logomb from './../pictures/drupal-coder.svg'
 
-const CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
+class Navmobile extends React.Component {
+    constructor(props) {
+        super(props);
+        this.ref = React.createRef();
+        this.ref1 = React.createRef();
+      }
+    
+CustomToggle = React.forwardRef(({ children, onClick }, ref) => (
     <a
-        href="/sas"
-        ref={ref}
+        href="/"
+        ref={this.ref}
         onClick={(e) => {
             e.preventDefault();
             onClick(e);
         }}
     >
         {children}
+        <span>&nbsp;&nbsp;</span>
       &#x25bc;
     </a>
 ));
 
-
-const Navmobile = () => {
+CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
+    <a
+        href="/"
+        ref={this.ref1}
+        onClick={(e) => {
+            e.preventDefault();
+            onClick(e);
+        }}
+    >
+        {children}
+        <span>&nbsp;&nbsp;</span>
+         &#x25bc;
+    </a>
+));
+    render() {
     return (
         <Navbar fluid="true" fixed="bottom" variant="dark" expand="lg" className={classes.navbarmobile}>
-            <Navbar.Collapse id="responsive-navbar-nav">
+            <Navbar.Collapse>
                 <Nav className="mr-auto">
                     <div className={classes.menu}>
                         <ul>
@@ -31,8 +52,8 @@ const Navmobile = () => {
                             </li>
                             <li ><Dropdown className={classes.dropmobile}>
                                 <div className={classes.dropmobile_item}>
-                                    <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
-                                        Администрирование 
+                                    <Dropdown.Toggle as={this.CustomToggle1} id="dropdown-custom-components">
+                                        Администрирование  
                                     </Dropdown.Toggle>
                                 </div>
                                 <div className={classes.dropchoice}>
@@ -60,7 +81,7 @@ const Navmobile = () => {
                             <li>
                                 <Dropdown className={classes.dropdown}>
                                     <div className={classes.dropmobile_item}>
-                                        <Dropdown.Toggle as={CustomToggle} id="dropdown-custom-components">
+                                        <Dropdown.Toggle as={this.CustomToggle} id="dropdown-custom-components">
                                             О нас
                                         </Dropdown.Toggle>
                                     </div>
@@ -94,7 +115,7 @@ const Navmobile = () => {
 
     )
 
-
+    }
 
 }
 
