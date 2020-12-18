@@ -28,30 +28,7 @@ const Twelve_screen = () => {
                     </Col>
                     <Col className={classes.forms} xs="12" lg={{ span: 5, offset: 2 }}>
                         <div>
-                            <Form />
-
-
-                            {/*<InputGroup className="mb-3">
-                                <FormControl className={classes.formback}
-                                    placeholder="Ваше имя"
-                                    aria-label="Username"
-                                />
-                            </InputGroup>
-
-                            <InputGroup className="mb-3">
-                                <FormControl className={classes.formback}
-                                    placeholder="Recipient's username"
-                                    aria-label="Recipient's username"
-                                />
-                            </InputGroup>
-
-                            <InputGroup className="mb-3">
-                                <FormControl className={classes.formback} id="basic-url" />
-                            </InputGroup>
-
-                            <InputGroup>
-                                <FormControl className={classes.formback} as="textarea" aria-label="With textarea" />
-    </InputGroup>  */}
+                            <Form />  
                         </div>
                     </Col>
                 </Row>
