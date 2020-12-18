@@ -31,7 +31,7 @@ const Five_screen = () => {
           </Card>
         </Col>
         <Col lg="4" xs="12" className={classes.card_wrapper}>
-          <Card className={classes.main_card}>
+          <Card className={classes.card}>
             <Card.Body className={classes.card_body}>
               <Card.Title className={classes.card_title}>Бизнес</Card.Title>
               <div className={classes.card_text}>
