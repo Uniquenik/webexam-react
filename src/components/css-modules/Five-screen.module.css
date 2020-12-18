@@ -129,7 +129,12 @@ li.list_item:before {
   color: white;
   background-color: #f14d34;
   border: 1px solid #f14d34;
+}
 
+.card:hover {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
 }
 
 @media screen and (min-device-width: 1024px) {
@@ -139,23 +144,25 @@ li.list_item:before {
     margin-left: auto;
     margin-right: auto;
   }
-}
-
-@media screen and (min-device-width: 991px) {
-  .card_wrapper{
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 50px;
-  }
-  .card_title {
-    padding-top: 40px;
-  }
   .card:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     box-shadow: 0 0 40px 20px lightgray;
     z-index: 1;
+  }
+  .card_wrapper{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-device-width: 991px) {
+  .card_wrapper{
+    margin-top: 50px;
+  }
+  .card_title {
+    padding-top: 40px;
   }
 }
 

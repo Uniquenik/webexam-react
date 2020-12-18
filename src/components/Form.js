@@ -9,10 +9,15 @@ import './css-modules/FormCustom.css';
 export default class Form extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { name: "", phone: "", email: "", message: "", 
-    isVerified: false 
-  }
-    this.verify = this.verify.bind(this); 
+    this.state = {
+      name: "",
+      phone: "",
+      email: "",
+      message: "",
+      isVerified: false
+    }
+
+    this.verify = this.verify.bind(this);
     this.onloadCallback=this.onloadCallback.bind(this);
   }
 
@@ -24,7 +29,7 @@ export default class Form extends React.Component {
       this.setState({
         isVerified: true
       })
-  }
+    }
   }
 
   handleForm = e => {
@@ -36,29 +41,35 @@ export default class Form extends React.Component {
       "https://formcarry.com/s/xCex2Sf1WL",
       this.state,
       { headers: { "Accept": "application/json" } }
+
     )
-      .then(function (response) {
-
-        // access response.data in order to check formcarry response
-        if (response.data.success) {
-
-        } else {
-          // handle error
-          alert("Thats okey");
-          console.log(response.data.message);
-        }
-
-      })
-      .catch(function (error) {
-        console.log(error);
-        alert("Error");
-      });
-
+    .then(function (response) {
+      console.log(response.data.message);
+      alert("Form was sent!");
+    })
+    .catch(function (error) {
+      if (error.response) {
+        alert("Response error")
+      } else if (error.request) {
+        alert("Request error");
+      } else {
+        alert("Unknown error");
+      }
+      console.log(error);
+    });
     }
+
     e.preventDefault();
   }
 
-  handleFields = e => this.setState({ [e.target.name]: e.target.value });
+  handleFields = e => {
+    this.setState({ [e.target.name]: e.target.value });
+    const { name, phone, email, message } = this.state;
+    localStorage.setItem('name', name);
+    localStorage.setItem('phone', phone);
+    localStorage.setItem('email', email);
+    localStorage.setItem('message', message);
+  }
 
   render() {
     return (
@@ -86,5 +97,21 @@ export default class Form extends React.Component {
         </form>
       </Container>
     );
+  }
+
+  getData() {
+    setTimeout(() => {
+        this.setState({
+        name: "ulla",
+        phone: "292",
+        email: "email",
+        message: "message",
+        isVerified: false
+      });
+    }, 1000);
+  }
+
+  componentDidMount() {
+    this.getData();
   }
 }

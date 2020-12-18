@@ -14,13 +14,15 @@ import NineScreen from './components/Nine-screen.jsx';
 import TenScreen from './components/Ten-screen.jsx';
 import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
+import Modal from './components/Modal.jsx';
+import { BrowserRouter, Route} from 'react-router-dom';
 
 function App() {
   return (
     <div>
-      <React.StrictMode>
+      <BrowserRouter>
+      <Route path='/form' component={Modal} />
         <Navmobile />
-        </React.StrictMode>
         <FirstScreen />
         <SecondScreen />
         <ThirdScreen />
@@ -31,8 +33,9 @@ function App() {
         <EightScreen />
         <NineScreen />
         <TenScreen />
-        <ElevenScreen/>
-        <TwelveScreen/>
+        <ElevenScreen />
+        <TwelveScreen />
+      </BrowserRouter>
     </div>
   );
 }
