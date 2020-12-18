@@ -1,4 +1,5 @@
 import './App.css';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navmobile from './components/Navmobile.jsx';
 import FirstScreen from './components/First-screen.jsx';
@@ -17,7 +18,9 @@ import TwelveScreen from './components/Twelve-screen.jsx';
 function App() {
   return (
     <div>
+      <React.StrictMode>
         <Navmobile />
+        </React.StrictMode>
         <FirstScreen />
         <SecondScreen />
         <ThirdScreen />
