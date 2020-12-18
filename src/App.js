@@ -15,7 +15,6 @@ import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
 
 function App() {
-  {/*const [modalActive,setModalActive] = useState(true);*/}
   return (
     <div>
         <Navmobile />
@@ -31,7 +30,6 @@ function App() {
         <TenScreen />
         <ElevenScreen/>
         <TwelveScreen/>
-        {/*<Modal active={modalActive} setActive={setModalActive}/> */}
     </div>
   );
 }
