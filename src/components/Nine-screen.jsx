@@ -62,29 +62,34 @@ export default class Nine_screen extends Component {
                                                     <h3>2</h3>
                                                     <p>See ....</p>
                                                     <p>Height is adaptive</p>
+                                                    <p>Wow?</p>
                                                 </div>
                                                 <div>
                                                     <h3>3</h3>
                                                     <p>See ....</p>
                                                     <p>Height is adaptive</p>
+                                                    <p>Wow?</p>
                                                     <p>Wowwww</p>
                                                 </div>
                                                 <div>
                                                     <h3>4</h3>
                                                     <p>See ....</p>
                                                     <p>Height is adaptive</p>
+                                                    <p>Wow?</p>
                                                     <p>Wowwww</p>
                                                 </div>
                                                 <div>
                                                     <h3>5</h3>
                                                     <p>See ....</p>
                                                     <p>Height is adaptive</p>
+                                                    <p>Wow?</p>
                                                     <p>Wowwww</p>
                                                 </div>
                                                 <div>
                                                     <h3>6</h3>
                                                     <p>See ....</p>
                                                     <p>Height is adaptive</p>
+                                                    <p>Wow?</p>
                                                     <p>Wowwww</p>
                                                 </div>
                                             </Slider>

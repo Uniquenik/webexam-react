@@ -1,29 +1,35 @@
 .secondslick1 .slick-list {
-    padding-left: 27.5vw !important;
-    padding-right: 27.5vw !important;
+    padding-left: 30% !important;
+    padding-right: 30% !important;
 }
 /* неведомый и ужасный костыль, лучше не трогать */
 @media (min-width: 576px) {
     .secondslick1 .slick-list {
-        padding-left: 20.5vw !important;
-        padding-right: 20.5vw !important;
+        padding-left: 21.5% !important;
+        padding-right: 21.5% !important;
+    }
+}
+@media (min-width: 768px) {
+    .secondslick1 .slick-list {
+        padding-left: 21% !important;
+        padding-right: 21% !important;
     }
 }
 @media (min-width: 992px) {
     .secondslick1 .slick-list {
-        padding-left: 16vw !important;
-        padding-right: 16vw !important;
+        padding-left: 16% !important;
+        padding-right: 16% !important;
     }
 }
 @media (min-width: 1200px) {
     .secondslick1 .slick-list {
-        padding-left: 13vw !important;
-        padding-right: 13vw !important;
+        padding-left: 13% !important;
+        padding-right: 13% !important;
     }
 }
 @media (min-width: 1500px) {
     .secondslick1 .slick-list {
-        padding-left: 12.5vw !important;
-        padding-right: 12.5vw !important;
+        padding-left: 12.5% !important;
+        padding-right: 12.5% !important;
     }
 } 
