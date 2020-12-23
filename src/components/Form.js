@@ -21,6 +21,29 @@ export default class Form extends React.Component {
     this.onloadCallback=this.onloadCallback.bind(this);
   }
 
+  componentWillMount() {
+    console.log(localStorage.getItem('name') );
+
+    localStorage.getItem('name') &&
+    localStorage.getItem('phone') &&
+    localStorage.getItem('email') &&
+    localStorage.getItem('message') &&
+    this.setState({
+      name: localStorage.getItem('name'),
+      phone: localStorage.getItem('phone'),
+      email: localStorage.getItem('email'),
+      message: localStorage.getItem('message'),
+      isVerified: false
+    });
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
+    && localStorage.getItem('message')){
+      console.log('Using data from localStorage');
+    }
+  }
+
   onloadCallback () {
     console.log("captcha works");
   }
@@ -64,6 +87,9 @@ export default class Form extends React.Component {
 
   handleFields = e => {
     this.setState({ [e.target.name]: e.target.value });
+  }
+
+  componentWillUpdate(nextProps, nextState){
     const { name, phone, email, message } = this.state;
     localStorage.setItem('name', name);
     localStorage.setItem('phone', phone);
@@ -97,22 +123,5 @@ export default class Form extends React.Component {
         </form>
       </Container>
     );
-  }
-
-  getData() {
-    setTimeout(() => {
-        this.setState({
-        name: "ulla",
-        phone: "292",
-        email: "email",
-        message: "message",
-        isVerified: false
-      });
-    }, 1000);
-  }
-
-  componentDidMount() {
-
-
   }
 }
