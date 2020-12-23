@@ -114,7 +114,7 @@ export default class Form extends React.Component {
           <textarea className={classes.forminputtext} name="message" id="message" placeholder="Ваш комментарий" onChange={this.handleFields}></textarea>
           <div className="checkbox">
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
-            <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span> </div></label>
+            <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span>. <span className="termsstar">*</span></div></label>
           </div>
           <div className={classes.recaptcha}>
           <Recaptcha
@@ -124,6 +124,7 @@ export default class Form extends React.Component {
             verifyCallback={this.verify}
             theme="dark"
             data-badge="inline"
+            hl= 'ru'
           />,
           </div>
           <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
