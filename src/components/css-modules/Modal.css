@@ -11,7 +11,6 @@
     justify-content: center;
     opacity: 0;
     pointer-events: none;
-    transition: 0.5s;
 }
 .modal.active {
     opacity: 1;
@@ -22,11 +21,8 @@
     padding:20px;
     border-radius: 12px;
     background-color: black;
-    transform: scale(0.5);
-    transition: 0.4s all;
     width:50vh;
 }
 .modal__content.active {
-    transform: scale(1);
 
 }

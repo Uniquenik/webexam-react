@@ -21,8 +21,8 @@ export default class Form extends React.Component {
     this.onloadCallback=this.onloadCallback.bind(this);
   }
 
-  componentWillMount() {
-    console.log(localStorage.getItem('name') );
+  UNSAFE_componentWillMount() {
+    console.log(localStorage.getItem('name'));
 
     localStorage.getItem('name') &&
     localStorage.getItem('phone') &&
@@ -35,6 +35,7 @@ export default class Form extends React.Component {
       message: localStorage.getItem('message'),
       isVerified: false
     });
+
   }
 
   componentDidMount() {
@@ -87,15 +88,14 @@ export default class Form extends React.Component {
 
   handleFields = e => {
     this.setState({ [e.target.name]: e.target.value });
-  }
-
-  componentWillUpdate(nextProps, nextState){
     const { name, phone, email, message } = this.state;
     localStorage.setItem('name', name);
     localStorage.setItem('phone', phone);
     localStorage.setItem('email', email);
     localStorage.setItem('message', message);
   }
+
+
 
   render() {
     return (
