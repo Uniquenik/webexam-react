@@ -15,27 +15,28 @@ import TenScreen from './components/Ten-screen.jsx';
 import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
 import Modal from './components/Modal.jsx';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-      <Route path='/form' component={Modal} />
-        <Navmobile />
-        <FirstScreen />
-        <SecondScreen />
-        <ThirdScreen />
-        <FourthScreen />
-        <FiveScreen />
-        <SixthScreen />
-        <SeventhScreen />
-        <EightScreen />
-        <NineScreen />
-        <TenScreen />
-        <ElevenScreen />
-        <TwelveScreen />
-      </BrowserRouter>
+        <BrowserRouter>
+          <Route path='/form' component={Modal} />
+          <Navmobile />
+          <FirstScreen />
+          <SecondScreen />
+          <ThirdScreen />
+          <FourthScreen />
+          <FiveScreen />
+          <SixthScreen />
+          <SeventhScreen />
+          <EightScreen />
+          <NineScreen />
+          <TenScreen />
+          <ElevenScreen />
+          <TwelveScreen />
+        </BrowserRouter>
     </div>
   );
 }

@@ -10,7 +10,6 @@ import Form from './Form.js';
 
 const Twelve_screen = () => {
     return (
-
         <Container fluid className={classes.maincontainer}>
             <div className={classes.ddiv}><img className={classes.dimg} src={dfly} alt="" /></div>
             <Container className={classes.cont}>
@@ -28,7 +27,7 @@ const Twelve_screen = () => {
                     </Col>
                     <Col className={classes.forms} xs="12" lg={{ span: 5, offset: 2 }}>
                         <div>
-                            <Form />  
+                            <Form/>  
                         </div>
                     </Col>
                 </Row>

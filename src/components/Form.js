@@ -20,6 +20,34 @@ export default class Form extends React.Component {
     this.verify = this.verify.bind(this);
     this.onloadCallback=this.onloadCallback.bind(this);
   }
+  sendForm() {
+    setTimeout(this.props.sendForm, 1000)
+  }
+
+
+  UNSAFE_componentWillMount() {
+    console.log(localStorage.getItem('name'));
+
+    localStorage.getItem('name') &&
+    localStorage.getItem('phone') &&
+    localStorage.getItem('email') &&
+    localStorage.getItem('message') &&
+    this.setState({
+      name: localStorage.getItem('name'),
+      phone: localStorage.getItem('phone'),
+      email: localStorage.getItem('email'),
+      message: localStorage.getItem('message'),
+      isVerified: false
+    });
+
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
+    && localStorage.getItem('message')){
+      console.log('Using data from localStorage');
+    }
+  }
 
   onloadCallback () {
     console.log("captcha works");
@@ -71,6 +99,8 @@ export default class Form extends React.Component {
     localStorage.setItem('message', message);
   }
 
+
+
   render() {
     return (
       <Container className={classes.maincontainer}>
@@ -86,33 +116,19 @@ export default class Form extends React.Component {
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span> </div></label>
           </div>
+          <div className={classes.recaptcha}>
           <Recaptcha
             sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
             render="explicit"
             onloadCallback={this.onloadCallback}
             verifyCallback={this.verify}
             theme="dark"
+            data-badge="inline"
           />,
+          </div>
           <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
       </Container>
     );
-  }
-
-  getData() {
-    setTimeout(() => {
-        this.setState({
-        name: "ulla",
-        phone: "292",
-        email: "email",
-        message: "message",
-        isVerified: false
-      });
-    }, 1000);
-  }
-
-  componentDidMount() {
-
-
   }
 }
