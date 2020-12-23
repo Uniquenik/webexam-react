@@ -7,10 +7,11 @@ import D from './../pictures/D.svg';
 import phone from './../pictures/phone.svg';
 import mail from './../pictures/Mail.svg';
 import Form from './Form.js';
+import {Provider} from 'react-redux';
 
 const Twelve_screen = () => {
     return (
-
+        <Provider store={store}>
         <Container fluid className={classes.maincontainer}>
             <div className={classes.ddiv}><img className={classes.dimg} src={dfly} alt="" /></div>
             <Container className={classes.cont}>
@@ -28,7 +29,7 @@ const Twelve_screen = () => {
                     </Col>
                     <Col className={classes.forms} xs="12" lg={{ span: 5, offset: 2 }}>
                         <div>
-                            <Form />  
+                            <Form send={store.getState()} sendForm={()=>store.dispatch({type:'SENDFORM'})} completeForm={()=>store.dispatch({type:'COMPLETEFORM'})} errorForm={()=>store.dispatch({type:'ERRORFORM'})}/>  
                         </div>
                     </Col>
                 </Row>
@@ -41,6 +42,7 @@ const Twelve_screen = () => {
                 </Container>
             </Container>
         </Container>
+        </Provider>
     )
 
 

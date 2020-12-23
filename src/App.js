@@ -1,5 +1,6 @@
 import './App.css';
 import React from 'react';
+import {Provider} from 'react-redux'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navmobile from './components/Navmobile.jsx';
 import FirstScreen from './components/First-screen.jsx';
@@ -15,27 +16,33 @@ import TenScreen from './components/Ten-screen.jsx';
 import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
 import Modal from './components/Modal.jsx';
-import { BrowserRouter, Route} from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
+import { createStore } from 'redux';
+import formReducer from './components/Redux/reducers';
+
+const store = createStore(formReducer);
 
 function App() {
   return (
     <div>
-      <BrowserRouter>
-      <Route path='/form' component={Modal} />
-        <Navmobile />
-        <FirstScreen />
-        <SecondScreen />
-        <ThirdScreen />
-        <FourthScreen />
-        <FiveScreen />
-        <SixthScreen />
-        <SeventhScreen />
-        <EightScreen />
-        <NineScreen />
-        <TenScreen />
-        <ElevenScreen />
-        <TwelveScreen />
-      </BrowserRouter>
+      <Provider store={store}>
+        <BrowserRouter>
+          <Route path='/form' component={Modal} />
+          <Navmobile />
+          <FirstScreen />
+          <SecondScreen />
+          <ThirdScreen />
+          <FourthScreen />
+          <FiveScreen />
+          <SixthScreen />
+          <SeventhScreen />
+          <EightScreen />
+          <NineScreen />
+          <TenScreen />
+          <ElevenScreen />
+          <TwelveScreen />
+        </BrowserRouter>
+      </Provider>
     </div>
   );
 }
