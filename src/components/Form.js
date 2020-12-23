@@ -4,7 +4,6 @@ import axios from "axios"; // For making client request.
 import { Container, Button } from "react-bootstrap";
 import classes from './css-modules/Form.module.css';
 import './css-modules/FormCustom.css';
-import PropTypes from 'prop-types'
 
 
 export default class Form extends React.Component {
@@ -17,8 +16,6 @@ export default class Form extends React.Component {
       message: "",
       isVerified: false
     }
-    this.sendForm = this.sendForm.bind(this);
-
 
     this.verify = this.verify.bind(this);
     this.onloadCallback=this.onloadCallback.bind(this);
@@ -27,6 +24,30 @@ export default class Form extends React.Component {
     setTimeout(this.props.sendForm, 1000)
   }
 
+
+  UNSAFE_componentWillMount() {
+    console.log(localStorage.getItem('name'));
+
+    localStorage.getItem('name') &&
+    localStorage.getItem('phone') &&
+    localStorage.getItem('email') &&
+    localStorage.getItem('message') &&
+    this.setState({
+      name: localStorage.getItem('name'),
+      phone: localStorage.getItem('phone'),
+      email: localStorage.getItem('email'),
+      message: localStorage.getItem('message'),
+      isVerified: false
+    });
+
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
+    && localStorage.getItem('message')){
+      console.log('Using data from localStorage');
+    }
+  }
 
   onloadCallback () {
     console.log("captcha works");
@@ -53,7 +74,6 @@ export default class Form extends React.Component {
     .then(function (response) {
       console.log(response.data.message);
       alert("Form was sent!");
-      this.props.completeForm;
     })
     .catch(function (error) {
       if (error.response) {
@@ -63,7 +83,6 @@ export default class Form extends React.Component {
       } else {
         alert("Unknown error");
       }
-      this.props.errorForm;
       console.log(error);
     });
     }
@@ -80,8 +99,9 @@ export default class Form extends React.Component {
     localStorage.setItem('message', message);
   }
 
+
+
   render() {
-    const {sendForm, completeForm,errorForm} = this.props
     return (
       <Container className={classes.maincontainer}>
         <form onSubmit={this.handleForm}>
@@ -96,40 +116,19 @@ export default class Form extends React.Component {
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span> </div></label>
           </div>
+          <div className={classes.recaptcha}>
           <Recaptcha
             sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
             render="explicit"
             onloadCallback={this.onloadCallback}
             verifyCallback={this.verify}
             theme="dark"
+            data-badge="inline"
           />,
-          <Button variant="dark" className={classes.submitbtn} onClick = {sendForm} active={!send}type="submit">Свяжитесь с нами</Button>
+          </div>
+          <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
       </Container>
     );
   }
-
-  getData() {
-    setTimeout(() => {
-        this.setState({
-        name: "ulla",
-        phone: "292",
-        email: "email",
-        message: "message",
-        isVerified: false
-      });
-    }, 1000);
-  }
-
-  componentDidMount() {
-
-
-  }
-}
-
-Form.propTypes = {
-  send: PropTypes.bool.isRequired,
-  sendForm: PropTypes.func.isRequired,
-  completeForm: PropTypes.func.isRequired,
-  errorForm: PropTypes.func.isRequired
 }
