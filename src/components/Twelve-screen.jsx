@@ -22,12 +22,14 @@ const Twelve_screen = () => {
                         </div>
                         <div className={classes.address}>
                             <div className={classes.contacts}><img src={phone} className={classes.contactsimgphone} alt="" />8 800 222-26-73</div>
-                            <div className={classes.contactsmail}><img src={mail} className={classes.contactsimg} alt="" />info@drupal-coder.ru</div>
+                            <div className={classes.contactsmail}><img src={mail} className={classes.contactsimg} alt="" />
+                              <a href="mailto:info@drupal-coder.ru?subject=Mail%20from%20Drupal" style={{textDecoration: 'underline', color: 'white'}}>info@drupal-coder.ru</a>
+                            </div>
                         </div>
                     </Col>
                     <Col className={classes.forms} xs="12" lg={{ span: 5, offset: 2 }}>
                         <div>
-                            <Form/>  
+                            <Form />
                         </div>
                     </Col>
                 </Row>
