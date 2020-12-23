@@ -47,7 +47,6 @@
     color:white;
     font-size: 12px;
 }
-
 @media (min-width: 992px) {
     .forminput {
         height: 65px;

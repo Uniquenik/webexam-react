@@ -118,6 +118,7 @@ export default class Form extends React.Component {
             onloadCallback={this.onloadCallback}
             verifyCallback={this.verify}
             theme="dark"
+            size="compact"
           />,
           <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
