@@ -21,8 +21,13 @@
     padding:20px;
     border-radius: 12px;
     background-color: black;
-    width:50vh;
+    width:90vw;
 }
 .modal__content.active {
 
+}
+@media (min-width: 992px) {
+    .modal__content {
+        width:50vw;
+    }
 }

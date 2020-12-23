@@ -20,6 +20,10 @@ export default class Form extends React.Component {
     this.verify = this.verify.bind(this);
     this.onloadCallback=this.onloadCallback.bind(this);
   }
+  sendForm() {
+    setTimeout(this.props.sendForm, 1000)
+  }
+
 
   UNSAFE_componentWillMount() {
     console.log(localStorage.getItem('name'));
@@ -112,14 +116,16 @@ export default class Form extends React.Component {
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span> </div></label>
           </div>
+          <div className={classes.recaptcha}>
           <Recaptcha
             sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
             render="explicit"
             onloadCallback={this.onloadCallback}
             verifyCallback={this.verify}
             theme="dark"
-            size="compact"
+            data-badge="inline"
           />,
+          </div>
           <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
         </form>
       </Container>

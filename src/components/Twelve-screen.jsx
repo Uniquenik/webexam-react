@@ -10,7 +10,6 @@ import Form from './Form.js';
 
 const Twelve_screen = () => {
     return (
-
         <Container fluid className={classes.maincontainer}>
             <div className={classes.ddiv}><img className={classes.dimg} src={dfly} alt="" /></div>
             <Container className={classes.cont}>
