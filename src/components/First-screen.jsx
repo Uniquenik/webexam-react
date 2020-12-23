@@ -3,7 +3,7 @@ import {Row, Col, Container } from "react-bootstrap";
 import classes from './css-modules/First-screen.module.css';
 import golden_finger from './../pictures/cup.png';
 import Nav from './Navpc.jsx';
-import video from './../pictures/code.mp4';
+import video from './../pictures/video.mp4';
 import drupal from './../pictures/drupal.svg';
 
 const First_screen = () => {
@@ -33,7 +33,7 @@ const First_screen = () => {
                 <br /> на CMS Drupal любых версий и запущенности
               </div>
               <div className={classes.button_section}>
-                <a href="/sas" className={classes.btn_tariff}>Тарифы</a>
+                <a href="#tariff" className={classes.btn_tariff}>Тарифы</a>
               </div>
             </Col>
             {/*6 иконок на главной*/}

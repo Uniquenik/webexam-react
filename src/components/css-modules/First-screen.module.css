@@ -5,9 +5,6 @@
     padding-top: 20px;
 }
 
-.first_screen_wrapper {
-}
-
 .title {
   font-size: 52px;
   font-weight: bold;
@@ -169,7 +166,7 @@
   -ms-transform: translate(-50%,-50%);
   transform: translate(-50%,-50%);
   z-index: 1;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.8);
 }
 @media (min-width: 1000px) {
   .fixwidth{
