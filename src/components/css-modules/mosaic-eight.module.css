@@ -24,6 +24,7 @@
   min-height: 240px;
   width: 100%;
   margin-bottom: 20px;
+  transition: all 300ms;
 }
 
 .text_wrapper {
@@ -143,5 +144,10 @@
   .third_component,
   .fourth_component {
     max-height: 450px;
+  }
+  .wrapper:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
   }
 }

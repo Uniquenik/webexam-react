@@ -15,8 +15,9 @@
 }
 
 .navbar{ 
+    padding-left: 7px;
     margin-top: 9px;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 12px;
     text-transform: uppercase;
     font-style: normal;
@@ -116,4 +117,10 @@ ul{
  
  .dropdown:hover .dropdown-menu {
   display: block!important;
+}
+
+@media (min-width: 1200px) {
+  .navbar{
+  padding-left: 40px;
+  }
 }

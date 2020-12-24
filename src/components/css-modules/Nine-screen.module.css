@@ -36,8 +36,8 @@
     content: ''; /* Вывод тени */
     position: absolute; /* Абсолютное позиционирование */
     top: -25px; /* Положение снизу */
-    left: 64px; /* Положение слева */
-    right: 64px;
+    left: 8vw; /* Положение слева */
+    right: 8vw;
     bottom:0px;
     opacity: 0.5;
     border: 1px solid rgba(0,0,0,.1);
@@ -50,8 +50,8 @@
     content: ''; /* Вывод тени */
     position: absolute; /* Абсолютное позиционирование */
     top: -50px; /* Положение снизу */
-    left: 128px; /* Положение слева */
-    right: 128px;
+    left: 16vw; /* Положение слева */
+    right: 16vw;
     bottom:0px ;
     opacity: 0.5;
     border: 1px solid rgba(0,0,0,.1);
@@ -149,7 +149,7 @@
         padding-bottom: 65px;
     }
     .center {
-        height: 45%;
+        height: 44%;
         border-left: 1px solid rgba(0,0,0,.1);
     }
     .buttonsblock {

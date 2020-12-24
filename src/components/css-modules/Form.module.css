@@ -39,6 +39,15 @@
     color: white;
     border-radius: 5px;
 }
+.submitbtn:hover {
+    background-color:  #F14D34;
+}
+.submitbtn:active {
+    background-color:  #F14D34!important;
+}
+.submitbtn:focus {
+    background-color:  #ec6e5a;
+}
 .check {
     display: flex;
     flex-direction: row;
@@ -47,7 +56,6 @@
     color:white;
     font-size: 12px;
 }
-
 @media (min-width: 992px) {
     .forminput {
         height: 65px;
@@ -55,5 +63,22 @@
     .forminputtext {
         height: 130px;
     }
+}
 
+.recaptcha {
+    transform:scale(0.7);
+    transform-origin:0;
+}
+
+@media (min-width: 370px) {
+    .recaptcha {
+        transform:scale(0.85);
+        transform-origin:0;
+    }
+}
+@media (min-width: 450px) {
+    .recaptcha {
+        transform:scale(1);
+        transform-origin:0;
+    }
 }
