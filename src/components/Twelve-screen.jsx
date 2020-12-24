@@ -8,7 +8,7 @@ import phone from './../pictures/phone.svg';
 import mail from './../pictures/Mail.svg';
 import Form from './Form.js';
 
-const Twelve_screen = () => {
+const Twelve_screen = (props) => {
     return (
         <Container fluid className={classes.maincontainer}>
             <div className={classes.ddiv}><img className={classes.dimg} src={dfly} alt="" /></div>
@@ -28,9 +28,7 @@ const Twelve_screen = () => {
                         </div>
                     </Col>
                     <Col className={classes.forms} xs="12" lg={{ span: 5, offset: 2 }}>
-                        <div>
-                            <Form />
-                        </div>
+                            <Form state={props.state} store={props.store} dispatch={props.store.dispatch.bind(props.store)}/>
                     </Col>
                 </Row>
             </Container>

@@ -1,9 +1,11 @@
 import React from "react";
 import Recaptcha from 'react-recaptcha';
 import axios from "axios"; // For making client request.
-import { Container, Button } from "react-bootstrap";
+import { Container, Button, Spinner} from "react-bootstrap";
 import classes from './css-modules/Form.module.css';
 import './css-modules/FormCustom.css';
+
+import { sendFormCreator, completeFormCreator } from './redux/form-reducer';
 
 
 export default class Form extends React.Component {
@@ -16,44 +18,52 @@ export default class Form extends React.Component {
       message: "",
       isVerified: false
     }
-
     this.verify = this.verify.bind(this);
-    this.onloadCallback=this.onloadCallback.bind(this);
+    this.onloadCallback = this.onloadCallback.bind(this);
+
+    this.sendForm = this.sendForm.bind(this);
+    this.completeForm = this.completeForm.bind(this);
   }
   sendForm() {
-    setTimeout(this.props.sendForm, 1000)
+    if (this.state.isVerified === true) {
+      this.props.store.dispatch(sendFormCreator());
+    }
   }
+  completeForm(){
+    this.props.store.dispatch(completeFormCreator());
+  }
+
 
 
   UNSAFE_componentWillMount() {
     console.log(localStorage.getItem('name'));
 
     localStorage.getItem('name') &&
-    localStorage.getItem('phone') &&
-    localStorage.getItem('email') &&
-    localStorage.getItem('message') &&
-    this.setState({
-      name: localStorage.getItem('name'),
-      phone: localStorage.getItem('phone'),
-      email: localStorage.getItem('email'),
-      message: localStorage.getItem('message'),
-      isVerified: false
-    });
+      localStorage.getItem('phone') &&
+      localStorage.getItem('email') &&
+      localStorage.getItem('message') &&
+      this.setState({
+        name: localStorage.getItem('name'),
+        phone: localStorage.getItem('phone'),
+        email: localStorage.getItem('email'),
+        message: localStorage.getItem('message'),
+        isVerified: false
+      });
 
   }
 
   componentDidMount() {
     if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
-    && localStorage.getItem('message')){
+      && localStorage.getItem('message')) {
       console.log('Using data from localStorage');
     }
   }
 
-  onloadCallback () {
+  onloadCallback() {
     console.log("captcha works");
   }
-  verify(response){
-    if (response){
+  verify(response) {
+    if (response) {
       this.setState({
         isVerified: true
       })
@@ -65,28 +75,31 @@ export default class Form extends React.Component {
       alert("Verify plz");
     }
     else {
-    axios.post(
-      "https://formcarry.com/s/xCex2Sf1WL",
-      this.state,
-      { headers: { "Accept": "application/json" } }
+      this.sendForm();
+      axios.post(
+        "https://formcarry.com/s/xCex2Sf1WL",
+        this.state,
+        { headers: { "Accept": "application/json" } }
 
-    )
-    .then(function (response) {
-      console.log(response.data.message);
-      alert("Form was sent!");
-    })
-    .catch(function (error) {
-      if (error.response) {
-        alert("Response error")
-      } else if (error.request) {
-        alert("Request error");
-      } else {
-        alert("Unknown error");
-      }
-      console.log(error);
-    });
+      )
+        .then((response)=> {
+          console.log(response.data.message);
+          this.completeForm();
+          alert("Form was sent!");
+        })
+        .catch((error) => {
+          if (error.response) {
+            alert("Response error")
+          } else if (error.request) {
+            alert("Request error");
+          } else {
+            alert("Unknown error");
+          }
+          console.log(error);
+          setTimeout(this.completeForm,1000);
+        });
+
     }
-
     e.preventDefault();
   }
 
@@ -117,17 +130,18 @@ export default class Form extends React.Component {
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span>. <span className="termsstar">*</span></div></label>
           </div>
           <div className={classes.recaptcha}>
-          <Recaptcha
-            sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
-            render="explicit"
-            onloadCallback={this.onloadCallback}
-            verifyCallback={this.verify}
-            theme="dark"
-            data-badge="inline"
-            hl= 'ru'
-          />,
+            <Recaptcha
+              sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
+              render="explicit"
+              onloadCallback={this.onloadCallback}
+              verifyCallback={this.verify}
+              theme="dark"
+              data-badge="inline"
+              hl='ru'
+            />,
           </div>
-          <Button variant="dark" className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
+          <Button variant="dark" disabled={this.props.state.formReducer.send} className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
+          <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/>
         </form>
       </Container>
     );

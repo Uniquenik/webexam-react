@@ -17,12 +17,11 @@ import TwelveScreen from './components/Twelve-screen.jsx';
 import Modal from './components/Modal.jsx';
 import { BrowserRouter, Route } from 'react-router-dom';
 
-
-function App() {
+const App = (props)=> {
   return (
     <div>
         <BrowserRouter>
-          <Route path='/form' component={Modal} />
+          <Route path='/form' render={()=><Modal state={props.state} dispatch={props.store.dispatch.bind(props.store)} store={props.store} />} />
           <Navmobile />
           <FirstScreen />
           <SecondScreen />
@@ -35,7 +34,7 @@ function App() {
           <NineScreen />
           <TenScreen />
           <ElevenScreen />
-          <TwelveScreen />
+          <TwelveScreen state={props.state} store={props.store} dispatch={props.store.dispatch.bind(props.store)} />
         </BrowserRouter>
     </div>
   );

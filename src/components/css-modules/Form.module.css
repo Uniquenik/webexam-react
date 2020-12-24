@@ -39,6 +39,15 @@
     color: white;
     border-radius: 5px;
 }
+.submitbtn:hover {
+    background-color:  #F14D34;
+}
+.submitbtn:active {
+    background-color:  #F14D34!important;
+}
+.submitbtn:focus {
+    background-color:  #ec6e5a;
+}
 .check {
     display: flex;
     flex-direction: row;
