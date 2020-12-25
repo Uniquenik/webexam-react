@@ -12,12 +12,13 @@ export default class Form extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      name: "",
-      phone: "",
-      email: "",
-      message: "",
+      name: localStorage.getItem('name') ? localStorage.getItem('name') : "",
+      phone: localStorage.getItem('phone') ? localStorage.getItem('phone') : "",
+      email: localStorage.getItem('email') ? localStorage.getItem('email') : "",
+      message: localStorage.getItem('message') ? localStorage.getItem('message') : "",
       isVerified: false
     }
+
     this.verify = this.verify.bind(this);
     this.onloadCallback = this.onloadCallback.bind(this);
 
@@ -32,30 +33,6 @@ export default class Form extends React.Component {
   completeForm(){
     this.props.store.dispatch(completeFormCreator());
   }
-
-  /*UNSAFE_componentWillMount() {
-    console.log(localStorage.getItem('name'));
-
-    localStorage.getItem('name') &&
-      localStorage.getItem('phone') &&
-      localStorage.getItem('email') &&
-      localStorage.getItem('message') &&
-      this.setState({
-        name: localStorage.getItem('name'),
-        phone: localStorage.getItem('phone'),
-        email: localStorage.getItem('email'),
-        message: localStorage.getItem('message'),
-        isVerified: false
-      });
-
-  }
-
-  componentDidMount() {
-    if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
-      && localStorage.getItem('message')) {
-      console.log('Using data from localStorage');
-    }
-  }*/
 
   onloadCallback() {
     console.log("captcha works");
@@ -101,28 +78,24 @@ export default class Form extends React.Component {
     e.preventDefault();
   }
 
-  handleFields = e => {
-    this.setState({ [e.target.name]: e.target.value });
-    const { name, phone, email, message } = this.state;
-    localStorage.setItem('name', name);
-    localStorage.setItem('phone', phone);
-    localStorage.setItem('email', email);
-    localStorage.setItem('message', message);
+  handleFields(e) {
+    localStorage.setItem(e.target.name, e.target.value);
+    this.setState((state) => {
+      return { [e.target.name]: e.target.value }
+    });
   }
-
-
 
   render() {
     return (
       <Container className={classes.maincontainer}>
         <form onSubmit={this.handleForm}>
-          <input className={classes.forminput} required type="text" id="name" name="name" placeholder="Ваше имя" onChange={this.handleFields} />
+          <input className={classes.forminput} value={this.state.name} required type="text" id="name" name="name" placeholder="Ваше имя" onChange={e => this.handleFields(e)} />
 
-          <input className={classes.forminput} required type="tel" id="phone" name="phone" placeholder="Телефон" onChange={this.handleFields} />
+          <input className={classes.forminput} value={this.state.phone} required type="tel" id="phone" name="phone" placeholder="Телефон" onChange={e => this.handleFields(e)} />
 
-          <input className={classes.forminput} required type="email" id="email" name="email" placeholder="E-mail" onChange={this.handleFields} />
+          <input className={classes.forminput} value={this.state.email} required type="email" id="email" name="email" placeholder="E-mail" onChange={e => this.handleFields(e)} />
 
-          <textarea className={classes.forminputtext} name="message" id="message" placeholder="Ваш комментарий" onChange={this.handleFields}></textarea>
+          <textarea className={classes.forminputtext} value={this.state.message} name="message" id="message" placeholder="Ваш комментарий" onChange={e => this.handleFields(e)}></textarea>
           <div className="checkbox">
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span>. <span className="termsstar">*</span></div></label>
