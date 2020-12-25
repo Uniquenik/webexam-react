@@ -1,11 +1,11 @@
 import React from "react";
 import Recaptcha from 'react-recaptcha';
 import axios from "axios"; // For making client request.
-import { Container, Button, Spinner} from "react-bootstrap";
+import { Container, Button, Spinner, Alert} from "react-bootstrap";
 import classes from './css-modules/Form.module.css';
 import './css-modules/FormCustom.css';
 
-import { sendFormCreator, completeFormCreator } from './redux/form-reducer';
+import { sendFormCreator, completeFormCreator,errorFormCreator } from './redux/form-reducer';
 
 
 export default class Form extends React.Component {
@@ -24,6 +24,7 @@ export default class Form extends React.Component {
 
     this.sendForm = this.sendForm.bind(this);
     this.completeForm = this.completeForm.bind(this);
+    this.errorForm = this.errorForm.bind(this);
   }
   sendForm() {
     if (this.state.isVerified === true) {
@@ -34,6 +35,36 @@ export default class Form extends React.Component {
     this.props.store.dispatch(completeFormCreator());
   }
 
+<<<<<<< HEAD
+=======
+  errorForm(error){
+    this.props.store.dispatch(errorFormCreator(error));
+  }
+  /*UNSAFE_componentWillMount() {
+    console.log(localStorage.getItem('name'));
+
+    localStorage.getItem('name') &&
+      localStorage.getItem('phone') &&
+      localStorage.getItem('email') &&
+      localStorage.getItem('message') &&
+      this.setState({
+        name: localStorage.getItem('name'),
+        phone: localStorage.getItem('phone'),
+        email: localStorage.getItem('email'),
+        message: localStorage.getItem('message'),
+        isVerified: false
+      });
+
+  }
+
+  componentDidMount() {
+    if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
+      && localStorage.getItem('message')) {
+      console.log('Using data from localStorage');
+    }
+  }*/
+
+>>>>>>> defe5609c571efc6b189f02479aeb944986b75d8
   onloadCallback() {
     console.log("captcha works");
   }
@@ -71,7 +102,8 @@ export default class Form extends React.Component {
             alert("Неизвестная ошибка. Попробуйте снова");
           }
           console.log(error);
-          setTimeout(this.completeForm,1000);
+          this.errorForm(error);
+          //setTimeout(this.completeForm,5000);
         });
 
     }
@@ -112,7 +144,9 @@ export default class Form extends React.Component {
             />,
           </div>
           <Button variant="dark" disabled={this.props.state.formReducer.send} className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
-          <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/>
+          <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/> 
+          <Alert className={classes.alert} variant="danger" style={{display: this.props.state.formReducer.error ? "block":"none" }} >Error when submitting the form</Alert>
+          <Alert className={classes.alert} variant="success" style={{display: this.props.state.formReducer.complete ? "block":"none" }}>Form was sent!</Alert>
         </form>
       </Container>
     );
