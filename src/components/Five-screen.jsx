@@ -28,7 +28,7 @@ const Five_screen = () => {
                 </div>
               </Card.Body>
               <div className={classes.btn_wrapper}>
-                <Link to='/form' className={classes.butt}>Свяжитесь с нами!</Link>
+                <Link to='/webexam-react/form' className={classes.butt}>Свяжитесь с нами!</Link>
               </div>
             </Card>
           </Col>
@@ -47,7 +47,7 @@ const Five_screen = () => {
                 </div>
               </Card.Body>
               <div className={classes.btn_wrapper}>
-                <Link to='/form' className={classes.butt_main}>Свяжитесь с нами!</Link>
+                <Link to='/webexam-react/form' className={classes.butt_main}>Свяжитесь с нами!</Link>
               </div>
             </Card>
           </Col>
@@ -66,7 +66,7 @@ const Five_screen = () => {
                 </div>
               </Card.Body>
               <div className={classes.btn_wrapper}>
-                <Link to='/form' className={classes.butt}>Свяжитесь с нами!</Link>
+                <Link to='/webexam-react/form' className={classes.butt}>Свяжитесь с нами!</Link>
               </div>
             </Card>
           </Col>

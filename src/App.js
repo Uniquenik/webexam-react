@@ -21,7 +21,7 @@ const App = (props)=> {
   return (
     <div>
         <BrowserRouter>
-          <Route path='/form' render={()=><Modal state={props.state} dispatch={props.store.dispatch.bind(props.store)} store={props.store} />} />
+          <Route path='/webexam-react/form' render={()=><Modal state={props.state} dispatch={props.store.dispatch.bind(props.store)} store={props.store} />} />
           <Navmobile />
           <FirstScreen />
           <SecondScreen />

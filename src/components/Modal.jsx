@@ -6,7 +6,7 @@ import Form from './Form.js';
 const Modal=(props) => {
     const history = useHistory();
     const somefunc = function() {
-        history.push("/");
+        history.push("/webexam-react");
     }
     return (
         <div className='modal active' onClick={somefunc}>
