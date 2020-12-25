@@ -45,7 +45,6 @@
   position: relative;
   left: 0;
   bottom: 0;
-  z-index: 10;
   width: 80%;
   max-width: 740px;
 }
@@ -95,7 +94,7 @@
 
 .background {
   position: absolute;
-  z-index: 3;
+  z-index: 1;
   height: 100%;
   right: 0;
   bottom: -70%;
@@ -107,10 +106,6 @@
 
 @media (min-width:768px){
   .background {
-    position: absolute;
-    z-index: 1;
-    height: 100%;
-    right: 0;
     bottom: 0;
   }
 
