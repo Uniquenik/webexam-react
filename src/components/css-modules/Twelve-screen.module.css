@@ -60,6 +60,9 @@
     font-size: 22px;
     font-weight: bold;
     margin-bottom: 20px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .h21{
     line-height: 1.35;
@@ -124,11 +127,15 @@
     .footer {
         height: 150px;
     }
-}    
+    .h2 {
+      width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+}
 
 @media (min-width:1200px){
     .address {
         padding-top:155px;
     }
 }
-  

@@ -31,16 +31,19 @@
 .h21 {
     font-family: 'Montserrat', sans-serif !important;
     font-style: normal;
-    text-align: center;
+    text-align: left;
     max-width: 100%;
     font-size: 16px;
     line-height: 1.37;
     color: #505570;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
 }
 .maincontainer {
     padding: 0px 0px;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
 }
 .firstslick {
     padding: 0px 0px;
@@ -48,33 +51,35 @@
 .secondslick {
     background-color: transparent;
     padding-left: 0px;
-    padding-right: 0px; 
+    padding-right: 0px;
     padding: 0px 0px;
 }
 @media(min-width:576px){
     .border {
-        height: 85px;
+      height: 85px;
     }
 }
 @media(min-width:768px){
     .border {
-        height: 95px;
+      height: 95px;
+    }
+    .h21 {
+      text-align: center;
     }
 }
 @media (min-width: 992px) {
     .border {
-        height: 100px;
+      height: 100px;
     }
-.h2 {
-    font-size: 42px;
-}
-.h21 {
-    width: 740px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.maincontainer {
-  padding-bottom: 110px;
-
-}
+    .h2 {
+        font-size: 42px;
+    }
+    .h21 {
+        width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .maincontainer {
+      padding-bottom: 110px;
+    }
 }
