@@ -33,9 +33,7 @@ export default class Form extends React.Component {
     this.props.store.dispatch(completeFormCreator());
   }
 
-
-
-  UNSAFE_componentWillMount() {
+  /*UNSAFE_componentWillMount() {
     console.log(localStorage.getItem('name'));
 
     localStorage.getItem('name') &&
@@ -57,7 +55,7 @@ export default class Form extends React.Component {
       && localStorage.getItem('message')) {
       console.log('Using data from localStorage');
     }
-  }
+  }*/
 
   onloadCallback() {
     console.log("captcha works");
@@ -72,7 +70,7 @@ export default class Form extends React.Component {
 
   handleForm = e => {
     if (!this.state.isVerified) {
-      alert("Verify plz");
+      alert("Пройдите верификацию");
     }
     else {
       this.sendForm();
@@ -85,15 +83,15 @@ export default class Form extends React.Component {
         .then((response)=> {
           console.log(response.data.message);
           this.completeForm();
-          alert("Form was sent!");
+          alert("Форма была отправлена, спасибо!");
         })
         .catch((error) => {
           if (error.response) {
-            alert("Response error")
+            alert("Ошибка ответа. Возможно Вы отправляете одну и ту же форму несколько раз. Попробуйте снова")
           } else if (error.request) {
-            alert("Request error");
+            alert("Ошибка запроса. Возможно у Вас проблемы с интернетом. Попробуйте снова");
           } else {
-            alert("Unknown error");
+            alert("Неизвестная ошибка. Попробуйте снова");
           }
           console.log(error);
           setTimeout(this.completeForm,1000);
@@ -118,11 +116,11 @@ export default class Form extends React.Component {
     return (
       <Container className={classes.maincontainer}>
         <form onSubmit={this.handleForm}>
-          <input className={classes.forminput} type="text" id="name" name="name" placeholder="Ваше имя" onChange={this.handleFields} />
+          <input className={classes.forminput} required type="text" id="name" name="name" placeholder="Ваше имя" onChange={this.handleFields} />
 
-          <input className={classes.forminput} type="tel" id="phone" name="phone" placeholder="Телефон" onChange={this.handleFields} />
+          <input className={classes.forminput} required type="tel" id="phone" name="phone" placeholder="Телефон" onChange={this.handleFields} />
 
-          <input className={classes.forminput} type="email" id="email" name="email" placeholder="E-mail" onChange={this.handleFields} />
+          <input className={classes.forminput} required type="email" id="email" name="email" placeholder="E-mail" onChange={this.handleFields} />
 
           <textarea className={classes.forminputtext} name="message" id="message" placeholder="Ваш комментарий" onChange={this.handleFields}></textarea>
           <div className="checkbox">
