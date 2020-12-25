@@ -6,7 +6,7 @@
 }
 
 .title {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: bold;
   color: #050c33;
   padding-bottom: 30px;
@@ -57,4 +57,10 @@
   .icon_description{
     padding-right: 150px;
   }
+}
+@media (min-width:300px){
+  .title {
+    font-size: 25px;
+  }
+
 }

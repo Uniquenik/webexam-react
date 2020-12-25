@@ -10,6 +10,11 @@ import logo1 from './../pictures/logo_2.png';
 import logo2 from './../pictures/logo-estee.png';
 import logo3 from './../pictures/logo.png';
 
+import logo4 from './../pictures/cableman_ru.png';
+import logo5 from './../pictures/farbors_ru.jpg';
+import logo6 from './../pictures/nashagazeta_ch.png';
+import logo7 from './../pictures/lpcma_rus_v4.jpg';
+
 
 
 export default class Ten_screen extends Component {
@@ -78,12 +83,12 @@ export default class Ten_screen extends Component {
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo1} className={classes.img} alt=""/>
+                                        <img src={logo4} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo2} className={classes.img} alt=""/>
+                                        <img src={logo5} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                             </Slider>
@@ -92,12 +97,12 @@ export default class Ten_screen extends Component {
                                 <Slider {...settings}>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo0} className={classes.img} alt="" />
+                                            <img src={logo1} className={classes.img} alt="" />
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo1} className={classes.img} alt="" />
+                                            <img src={logo7} className={classes.img} alt="" />
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
@@ -107,17 +112,17 @@ export default class Ten_screen extends Component {
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo3} className={classes.img} alt=""/>
+                                            <img src={logo5} className={classes.img} alt=""/>
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                         <div className={classes.border}>
-                                            <img src={logo1} className={classes.img} alt=""/>
+                                            <img src={logo4} className={classes.img} alt=""/>
                                         </div>
                                     </div>
                                     <div className={classes.padding}>
                                     <div className={classes.border}>
-                                        <img src={logo2} className={classes.img} alt=""/>
+                                        <img src={logo6} className={classes.img} alt=""/>
                                     </div>
                                 </div>
                                 </Slider>

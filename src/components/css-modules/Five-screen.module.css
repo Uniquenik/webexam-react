@@ -3,8 +3,10 @@
   font-style: normal;
   text-align: center;
   position: relative;
+  z-index: 1;
 }
-
+/*Исправить верхнее значение z-index, 
+  при 2 наводится на мобилках первая карточка, но проблема с ноутом*/
 .back {
   position: absolute;
   height: 100%;

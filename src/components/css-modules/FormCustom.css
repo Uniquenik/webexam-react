@@ -70,5 +70,14 @@
   }
   .checkbox .terms {
     color: #F14D34;
+    font-weight: 500;
+    animation: none;
+}
+.checkbox .terms:hover {
+    color: #F14D34;
     font-weight: normal;
+    text-decoration: underline;
+}
+.termsstar {
+    color:red;
 }

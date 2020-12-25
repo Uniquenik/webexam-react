@@ -60,7 +60,7 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
                                     </Dropdown.Toggle>
                                 </div>
                                 <div className={classes.dropchoice}>
-                                    <Dropdown.Menu show className={classes.dropdown_menu} >
+                                    <Dropdown.Menu className={classes.dropdown_menu} >
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/1.1">Миграция</Dropdown.Item>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/1.2">Бэкапы</Dropdown.Item>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/1.3">Аудит безопасности</Dropdown.Item>
@@ -88,7 +88,7 @@ CustomToggle1 = React.forwardRef(({ children, onClick }, ref) => (
                                             О нас
                                         </Dropdown.Toggle>
                                     </div>
-                                    <Dropdown.Menu className={classes.dropdown_menu} show="true">
+                                    <Dropdown.Menu className={classes.dropdown_menu}>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/2.1">Команда</Dropdown.Item>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/2.2">DRUPALGIVE</Dropdown.Item>
                                         <Dropdown.Item className={classes.dropmobile_item1} href="#action/2.3">Блог</Dropdown.Item>
