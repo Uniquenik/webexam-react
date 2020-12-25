@@ -3,9 +3,8 @@
   font-style: normal;
   text-align: center;
   position: relative;
-  z-index: 1;
 }
-/*Исправить верхнее значение z-index, 
+/*Исправить верхнее значение z-index,
   при 2 наводится на мобилках первая карточка, но проблема с ноутом*/
 .back {
   position: absolute;
@@ -16,18 +15,6 @@
 
 .back img {
   height: 100%;
-}
-
-.icon {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
-.icon img {
-  height: 100%;
-  width: auto;
 }
 
 .title {
@@ -59,8 +46,9 @@
   color: #5e69b0;
 }
 
-
 .card_wrapper{
+  z-index: 5;
+
   padding-left: 5px;
   padding-right: 5px;
   padding-bottom: 20px;
@@ -76,7 +64,6 @@
 }
 
 .main_card {
-  z-index: 1;
 }
 
 .card_body {
