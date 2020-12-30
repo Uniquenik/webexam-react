@@ -5,7 +5,7 @@ import { Container, Button, Spinner, Alert} from "react-bootstrap";
 import classes from './css-modules/Form.module.css';
 import './css-modules/FormCustom.css';
 
-import { sendFormCreator, completeFormCreator,errorFormCreator } from './redux/form-reducer';
+import { sendFormCreator, completeFormCreator, errorFormCreator } from './redux/form-reducer';
 
 
 export default class Form extends React.Component {
@@ -34,37 +34,12 @@ export default class Form extends React.Component {
   completeForm(){
     this.props.store.dispatch(completeFormCreator());
   }
-
-<<<<<<< HEAD
-=======
   errorForm(error){
     this.props.store.dispatch(errorFormCreator(error));
   }
-  /*UNSAFE_componentWillMount() {
-    console.log(localStorage.getItem('name'));
 
-    localStorage.getItem('name') &&
-      localStorage.getItem('phone') &&
-      localStorage.getItem('email') &&
-      localStorage.getItem('message') &&
-      this.setState({
-        name: localStorage.getItem('name'),
-        phone: localStorage.getItem('phone'),
-        email: localStorage.getItem('email'),
-        message: localStorage.getItem('message'),
-        isVerified: false
-      });
 
-  }
 
-  componentDidMount() {
-    if (localStorage.getItem('name') && localStorage.getItem('phone') && localStorage.getItem('email')
-      && localStorage.getItem('message')) {
-      console.log('Using data from localStorage');
-    }
-  }*/
-
->>>>>>> defe5609c571efc6b189f02479aeb944986b75d8
   onloadCallback() {
     console.log("captcha works");
   }
@@ -132,7 +107,7 @@ export default class Form extends React.Component {
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span>. <span className="termsstar">*</span></div></label>
           </div>
-          <div className={classes.recaptcha}>
+          {/*<div className={classes.recaptcha}>
             <Recaptcha
               sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
               render="explicit"
@@ -142,9 +117,9 @@ export default class Form extends React.Component {
               data-badge="inline"
               hl='ru'
             />,
-          </div>
+        </div> */}
           <Button variant="dark" disabled={this.props.state.formReducer.send} className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
-          <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/> 
+          <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/>
           <Alert className={classes.alert} variant="danger" style={{display: this.props.state.formReducer.error ? "block":"none" }} >Error when submitting the form</Alert>
           <Alert className={classes.alert} variant="success" style={{display: this.props.state.formReducer.complete ? "block":"none" }}>Form was sent!</Alert>
         </form>

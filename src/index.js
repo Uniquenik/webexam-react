@@ -4,10 +4,15 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter } from 'react-router-dom';
+
+
 
 let rerenderEntireTree = (state) => {
   ReactDOM.render(
-  <App state={state} dispatch={store.dispatch.bind(store)} store={store} />,
+  <BrowserRouter>
+    <App state={state} dispatch={store.dispatch.bind(store)} store={store} />
+  </BrowserRouter>,
   document.getElementById('root')
 );
 }

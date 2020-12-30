@@ -5,9 +5,8 @@ import someReducer from'./some-reducer';
 let reducers = combineReducers({
     formReducer,
     someReducer
-
 });
 
 let store = createStore(reducers);
 
-export default store; 
+export default store;

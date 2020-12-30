@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, { useState, useRef } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navmobile from './components/Navmobile.jsx';
 import FirstScreen from './components/First-screen.jsx';
@@ -14,28 +14,45 @@ import NineScreen from './components/Nine-screen.jsx';
 import TenScreen from './components/Ten-screen.jsx';
 import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
-import Modal from './components/Modal.jsx';
-import { BrowserRouter, Route } from 'react-router-dom';
 
-const App = (props)=> {
+import Modal from './components/Modal.jsx';
+import { Route, Switch, useLocation } from 'react-router-dom';
+import { openFormCreator } from './components/redux/form-reducer';
+
+import { CSSTransition } from 'react-transition-group';
+
+
+function App (props) {
   return (
     <div>
-        <BrowserRouter>
-          <Route path='/webexam-react/form' render={()=><Modal state={props.state} dispatch={props.store.dispatch.bind(props.store)} store={props.store} />} />
-          <Navmobile />
-          <FirstScreen />
-          <SecondScreen />
-          <ThirdScreen />
-          <FourthScreen />
-          <FiveScreen />
-          <SixthScreen />
-          <SeventhScreen />
-          <EightScreen />
-          <NineScreen />
-          <TenScreen />
-          <ElevenScreen />
-          <TwelveScreen state={props.state} store={props.store} dispatch={props.store.dispatch.bind(props.store)} />
-        </BrowserRouter>
+      <Route path='/webexam-react/form' >
+        {({ match }) => (
+          <CSSTransition
+            in={match != null}
+            timeout={1000}
+            classNames="page"
+            unmountOnExit
+          >
+            <div className="page">
+              <div className="page_back" />
+              <Modal state={props.state} dispatch={props.store.dispatch.bind(props.store)} store={props.store} />
+            </div>
+          </CSSTransition>
+        )}
+      </Route>
+      <Navmobile />
+      <FirstScreen />
+      <SecondScreen />
+      <ThirdScreen />
+      <FourthScreen />
+      <FiveScreen />
+      <SixthScreen />
+      <SeventhScreen />
+      <EightScreen />
+      <NineScreen />
+      <TenScreen />
+      <ElevenScreen />
+      <TwelveScreen state={props.state} store={props.store} dispatch={props.store.dispatch.bind(props.store)} />
     </div>
   );
 }
