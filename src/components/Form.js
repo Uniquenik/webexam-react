@@ -5,7 +5,7 @@ import { Container, Button, Spinner, Alert} from "react-bootstrap";
 import classes from './css-modules/Form.module.css';
 import './css-modules/FormCustom.css';
 
-import { sendFormCreator, completeFormCreator,errorFormCreator } from './redux/form-reducer';
+import { sendFormCreator, completeFormCreator, errorFormCreator } from './redux/form-reducer';
 
 
 export default class Form extends React.Component {
@@ -37,7 +37,6 @@ export default class Form extends React.Component {
   errorForm(error){
     this.props.store.dispatch(errorFormCreator(error));
   }
-
 
   onloadCallback() {
     console.log("captcha works");
