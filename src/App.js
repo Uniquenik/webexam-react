@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useRef } from 'react';
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navmobile from './components/Navmobile.jsx';
 import FirstScreen from './components/First-screen.jsx';
@@ -16,8 +16,7 @@ import ElevenScreen from './components/Eleven-screen.jsx';
 import TwelveScreen from './components/Twelve-screen.jsx';
 
 import Modal from './components/Modal.jsx';
-import { Route, Switch, useLocation } from 'react-router-dom';
-import { openFormCreator } from './components/redux/form-reducer';
+import { Route } from 'react-router-dom';
 
 import { CSSTransition } from 'react-transition-group';
 

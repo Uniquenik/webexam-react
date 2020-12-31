@@ -1,13 +1,11 @@
 const SEND_FORM = 'SENDFORM';
 const COMPLETE_FORM = 'COMPLETEFORM';
 const ERROR_FORM = 'ERRORFORM';
-const OPEN_FORM = 'OPEN_FORM';
 
 let initialState = {
     send: false,
     error: null,
     complete: false,
-    open: false,
 };
 
 const formReducer = (state = initialState, action) => {
@@ -30,12 +28,6 @@ const formReducer = (state = initialState, action) => {
             state.complete = false;
             state.open = true;
             return state;
-        case OPEN_FORM:
-            state.send = false;
-            state.error = null;
-            state.complete = false;
-            state.open = true;
-            return state;
         default:
             return state;
     }
@@ -44,6 +36,5 @@ const formReducer = (state = initialState, action) => {
 export const sendFormCreator = () => ({ type: SEND_FORM });
 export const completeFormCreator = () => ({ type: COMPLETE_FORM });
 export const errorFormCreator = (err) => ({ type: ERROR_FORM, err: err });
-export const openFormCreator = () => ({ type: OPEN_FORM });
 
 export default formReducer;
