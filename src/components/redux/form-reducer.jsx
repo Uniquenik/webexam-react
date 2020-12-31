@@ -5,21 +5,25 @@ const ERROR_FORM = 'ERRORFORM';
 let initialState = {
     send: false,
     error: null,
+    complete: false,
 };
 
 const formReducer = (state = initialState, action) => {
     switch (action.type) {
         case SEND_FORM:
             state.send = true;
-            state.err = null;
+            state.error = null;
+            state.complete = false;
             return state;
         case COMPLETE_FORM:
             state.send = false;
-            state.err = null;
+            state.error = null;
+            state.complete = true;
             return state;
         case ERROR_FORM:
             state.send = false;
             state.error = action.err;
+            state.complete = false;
             return state;
         default:
             return state;
