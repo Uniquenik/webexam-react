@@ -8,11 +8,11 @@
     pointer-events: all;
 }
 .modal__content {
-    padding:20px;
     border-radius: 12px;
     background-color: black;
 }
 .modal__content.active {
+  padding:20px;
 }
 @media (min-width: 992px) {
     .modal__content {
