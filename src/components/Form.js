@@ -107,7 +107,7 @@ export default class Form extends React.Component {
             <input className="custom-checkbox" type="checkbox" id="check" name="check" required />
             <label htmlFor="check"> <div>Отправляя заявку, я даю согласие на <span className="terms"> обработку своих персональных данных</span>. <span className="termsstar">*</span></div></label>
           </div>
-          {/*<div className={classes.recaptcha}>
+          <div className={classes.recaptcha}>
             <Recaptcha
               sitekey="6Lc9rQgaAAAAAMnKirM21aQefsalTRzMqSqwoHfF"
               render="explicit"
@@ -117,7 +117,7 @@ export default class Form extends React.Component {
               data-badge="inline"
               hl='ru'
             />,
-        </div> */}
+          </div>
           <Button variant="dark" disabled={this.props.state.formReducer.send} className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
           <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/>
           <Alert className={classes.alert} variant="danger" style={{display: this.props.state.formReducer.error ? "block":"none" }} >Error when submitting the form</Alert>

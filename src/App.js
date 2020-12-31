@@ -34,11 +34,13 @@ function App (props) {
             unmountOnExit
           >
             <div className="page">
-              <div className="page_back" />
               <Modal state={props.state} dispatch={props.store.dispatch.bind(props.store)} store={props.store} />
             </div>
           </CSSTransition>
         )}
+      </Route>
+      <Route path='/webexam-react/form'>
+        <div className="page_back" />
       </Route>
       <Navmobile />
       <FirstScreen />
