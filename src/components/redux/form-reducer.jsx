@@ -14,19 +14,16 @@ const formReducer = (state = initialState, action) => {
             state.send = true;
             state.error = null;
             state.complete = false;
-            state.open = true;
             return state;
         case COMPLETE_FORM:
             state.send = false;
             state.error = null;
             state.complete = true;
-            state.open = true;
             return state;
         case ERROR_FORM:
             state.send = false;
             state.error = action.err;
             state.complete = false;
-            state.open = true;
             return state;
         default:
             return state;

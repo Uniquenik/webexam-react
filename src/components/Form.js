@@ -38,8 +38,6 @@ export default class Form extends React.Component {
     this.props.store.dispatch(errorFormCreator(error));
   }
 
-
-
   onloadCallback() {
     console.log("captcha works");
   }
@@ -118,10 +116,12 @@ export default class Form extends React.Component {
               hl='ru'
             />,
           </div>
-          <Button variant="dark" disabled={this.props.state.formReducer.send} className={classes.submitbtn} type="submit">Свяжитесь с нами</Button>
-          <Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/>
+          <Button variant="dark" className={classes.submitbtn} type="submit" style={{ display: this.props.state.formReducer.send ? "none" : "block"}}>Свяжитесь с нами</Button>
+          <Button variant="dark" disabled={true} style={{ display: this.props.state.formReducer.send ? "block" : "none"}} className={classes.submitbtn}><Spinner animation="border" className="mx-auto" style={{ color: "rgba(255,255,255,1)", textAlign: "center", display: this.props.state.formReducer.send ? "block" : "none"}}/></Button>
+          <div className={classes.alertmobile}>
           <Alert className={classes.alert} variant="danger" style={{display: this.props.state.formReducer.error ? "block":"none" }} >Error when submitting the form</Alert>
           <Alert className={classes.alert} variant="success" style={{display: this.props.state.formReducer.complete ? "block":"none" }}>Form was sent!</Alert>
+          </div>
         </form>
       </Container>
     );

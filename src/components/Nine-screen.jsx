@@ -103,6 +103,9 @@ export default class Nine_screen extends Component {
                                                 <p>Wowwww</p>
                                             </div>
                                             <div>
+                                                <div className={classes.picture}>
+                                                    <img src={logo5} alt="" />
+                                                </div>
                                                 <h3>6</h3>
                                                 <p>See ....</p>
                                                 <p>Height is adaptive</p>
